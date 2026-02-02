@@ -12,7 +12,6 @@
         public string PhoneNumber { get; set; }
         public DateTime HireDate { get; set; }
 
-        public User User { get; set; }
         public ICollection<Booking> Bookings { get; set; }
         public ICollection<FAQ> FAQs { get; set; }
     }

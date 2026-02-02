@@ -16,7 +16,6 @@
 
         public Room Room{ get; set; }
         public Staff Staff { get; set; }
-        public User User { get; set; }
         public ICollection<BookingStatusHistory> BookingStatusHistories { get; set; }
 
 

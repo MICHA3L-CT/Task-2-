@@ -1,38 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\721242\\source\\repos\\Task2\\",
+  "WorkspaceRootPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|c:\\users\\721242\\source\\repos\\task2\\task2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|solutionrelative:task2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\task2\\task2\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|c:\\users\\721242\\source\\repos\\task2\\task2\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|solutionrelative:task2\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\task2\\task2\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|c:\\users\\721242\\source\\repos\\task2\\task2\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|solutionrelative:task2\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\task2\\task2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|c:\\users\\721242\\source\\repos\\task2\\task2\\models\\bookingstatushistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|solutionrelative:task2\\models\\bookingstatushistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\task2\\task2\\models\\bookingstatushistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|c:\\users\\721242\\source\\repos\\task2\\task2\\models\\availabilitycalendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|solutionrelative:task2\\models\\availabilitycalendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\task2\\task2\\models\\availabilitycalendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|c:\\users\\721242\\source\\repos\\task2\\task2\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|solutionrelative:task2\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\task2\\task2\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|c:\\users\\721242\\source\\repos\\task2\\task2\\models\\availabiltyslots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|solutionrelative:task2\\models\\availabiltyslots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\task2\\task2\\models\\availabiltyslots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|c:\\users\\721242\\source\\repos\\task2\\task2\\models\\faq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|solutionrelative:task2\\models\\faq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EE006E6-F849-4D6E-92D2-A3A83CA1BF8F}|Task2\\Task2.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\task2\\task2\\models\\faq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\User.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\User.cs",
               "RelativeDocumentMoniker": "Task2\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\User.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\User.cs",
               "RelativeToolTip": "Task2\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T13:59:13.153Z",
               "EditorCaption": ""
@@ -61,76 +53,72 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "FAQ.cs",
-              "DocumentMoniker": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\FAQ.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\FAQ.cs",
               "RelativeDocumentMoniker": "Task2\\Models\\FAQ.cs",
-              "ToolTip": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\FAQ.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\FAQ.cs",
               "RelativeToolTip": "Task2\\Models\\FAQ.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T13:51:56.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T13:51:56.42Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "AvailabiltySlots.cs",
-              "DocumentMoniker": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\AvailabiltySlots.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\AvailabiltySlots.cs",
               "RelativeDocumentMoniker": "Task2\\Models\\AvailabiltySlots.cs",
-              "ToolTip": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\AvailabiltySlots.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\AvailabiltySlots.cs",
               "RelativeToolTip": "Task2\\Models\\AvailabiltySlots.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T13:50:24.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T13:50:24.132Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AvailabilityCalendar.cs",
-              "DocumentMoniker": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\AvailabilityCalendar.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\AvailabilityCalendar.cs",
               "RelativeDocumentMoniker": "Task2\\Models\\AvailabilityCalendar.cs",
-              "ToolTip": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\AvailabilityCalendar.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\AvailabilityCalendar.cs",
               "RelativeToolTip": "Task2\\Models\\AvailabilityCalendar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T13:44:07.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T13:44:07.929Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "BookingStatusHistory.cs",
-              "DocumentMoniker": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\BookingStatusHistory.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\BookingStatusHistory.cs",
               "RelativeDocumentMoniker": "Task2\\Models\\BookingStatusHistory.cs",
-              "ToolTip": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\BookingStatusHistory.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\BookingStatusHistory.cs",
               "RelativeToolTip": "Task2\\Models\\BookingStatusHistory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T13:37:28.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T13:37:28.505Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Booking.cs",
-              "DocumentMoniker": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\Booking.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "Task2\\Models\\Booking.cs",
-              "ToolTip": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\Booking.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\Booking.cs",
               "RelativeToolTip": "Task2\\Models\\Booking.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T13:26:53.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Staff.cs",
-              "DocumentMoniker": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\Staff.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\Staff.cs",
               "RelativeDocumentMoniker": "Task2\\Models\\Staff.cs",
-              "ToolTip": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\Staff.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\Staff.cs",
               "RelativeToolTip": "Task2\\Models\\Staff.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T13:41:25.958Z",
               "EditorCaption": ""
@@ -139,14 +127,13 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\Room.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\Room.cs",
               "RelativeDocumentMoniker": "Task2\\Models\\Room.cs",
-              "ToolTip": "C:\\Users\\721242\\source\\repos\\Task2\\Task2\\Models\\Room.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\Task2\\Task2\\Models\\Room.cs",
               "RelativeToolTip": "Task2\\Models\\Room.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T13:22:59.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T13:22:59.374Z"
             }
           ]
         }
