@@ -32,12 +32,132 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/AvailabilityCalendars/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhaWxhYmlsaXR5Q2FsZW5kYXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/AvailabilityCalendars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhaWxhYmlsaXR5Q2FsZW5kYXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/AvailabilityCalendars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhaWxhYmlsaXR5Q2FsZW5kYXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/AvailabilityCalendars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhaWxhYmlsaXR5Q2FsZW5kYXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/AvailabilityCalendars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhaWxhYmlsaXR5Q2FsZW5kYXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/AvailabiltySlots/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhaWxhYmlsdHlTbG90c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/AvailabiltySlots/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhaWxhYmlsdHlTbG90c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/AvailabiltySlots/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhaWxhYmlsdHlTbG90c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/AvailabiltySlots/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhaWxhYmlsdHlTbG90c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/AvailabiltySlots/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhaWxhYmlsdHlTbG90c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/BookingStatusHistories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/BookingStatusHistories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/BookingStatusHistories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/BookingStatusHistories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/BookingStatusHistories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Bookings/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Bookings/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Bookings/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Bookings/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Bookings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/FAQs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFRc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/FAQs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFRc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/FAQs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFRc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/FAQs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFRc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/FAQs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFRc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Rooms/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Rooms/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Rooms/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Rooms/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Rooms/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Shared/Error.cshtml]
@@ -50,6 +170,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Staffs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Staffs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Staffs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Staffs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/Staffs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/Task2/Task2/Views/_ViewImports.cshtml]
