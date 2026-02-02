@@ -16,7 +16,7 @@
 
         public Room Room{ get; set; }
         public Staff Staff { get; set; }
-        public ICollection<BookingStatusHistory> BookingStatusHistories { get; set; }
+        public ICollection<BookingStatusHistory>? BookingStatusHistories { get; set; }
 
 
 

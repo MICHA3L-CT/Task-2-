@@ -12,6 +12,6 @@
         public bool IsAvailable { get; set; }
 
         public ICollection <Booking> Bookings { get; set; }
-        public ICollection <AvailabilityCalendar> AvailabilityCalendars { get; set; }
+        public ICollection<AvailabilityCalendar>? AvailabilityCalendars { get; set; }
     }
 }

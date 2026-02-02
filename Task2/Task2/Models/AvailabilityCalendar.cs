@@ -6,6 +6,6 @@
         public int RoomId { get; set; }
         public DateOnly Date { get; set; }
         public Room Room { get; set; }
-        public ICollection<AvailabiltySlots> AvailabiltySlots { get; set; }
+        public ICollection<AvailabiltySlots>? AvailabiltySlots { get; set; }
     }
 }
