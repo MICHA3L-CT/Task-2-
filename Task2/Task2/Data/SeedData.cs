@@ -101,42 +101,49 @@ namespace Task2.Data
                 await context.Room.AddRangeAsync(rooms);
                 await context.SaveChangesAsync();
             }
-           
-            // Seed bookings
-            public static async Task SeedBookingsAsync(ApplicationDbContext context)
-            {
-                if (!context.Booking.Any())
-                {
-                    context.Booking.AddRange(
-                        new Models.Booking
-                        {
-                            RoomId = 1,
-                            StaffId = 1,
-                            UserId = "guest001",
-                            GuestName = "Alice Smith",
-                            NumberOfGuests = 2,
-                            BookingDate = DateTime.Now.AddDays(-10),
-                            CheckInDate = DateTime.Now.AddDays(5),
-                            CheckOutDate = DateTime.Now.AddDays(10),
-                            CreatedAt = DateTime.Now.AddDays(-10),
-                            UpdatedAt = DateTime.Now.AddDays(-10)
-                        },
-                        new Models.Booking
-                        {
-                            RoomId = 2,
-                            StaffId = 2,
-                            UserId = "guest002",
-                            GuestName = "Bob Johnson",
-                            NumberOfGuests = 1,
-                            BookingDate = DateTime.Now.AddDays(-8),
-                            CheckInDate = DateTime.Now.AddDays(3),
-                            CheckOutDate = DateTime.Now.AddDays(6),
-                            CreatedAt = DateTime.Now.AddDays(-8),
-                            UpdatedAt = DateTime.Now.AddDays(-8)
-                        }
-                    );
-                    await context.SaveChangesAsync();
-                }
         }
-          
+
+
+        // Seed bookings
+        public static async Task SeedBookingsAsync(ApplicationDbContext context)
+        {
+            if (!await context.Booking.AnyAsync())
+            {
+                var room = await context.BookingStatusHistory.SingleOrDefaultAsync(x => x.Name == "Room");
+                {
+                    new Booking
+                    {
+                        RoomId = 1,
+                        StaffId = 1,
+                        UserId = "user1",
+                        GuestName = "John Doe",
+                        NumberOfGuests = 2,
+                        BookingDate = DateOnly.FromDateTime(DateTime.Now),
+                        CheckInDate = DateTime.Now.AddDays(7),
+                        CheckOutDate = DateTime.Now.AddDays(10),
+                        CreatedAt = DateTime.Now,
+                        UpdatedAt = DateTime.Now
+                    },
+                    new Booking
+                    {
+                        RoomId = 2,
+                        StaffId = 2,
+                        UserId = "user2",
+                        GuestName = "Jane Smith",
+                        NumberOfGuests = 1,
+                        BookingDate = DateOnly.FromDateTime(DateTime.Now),
+                        CheckInDate = DateTime.Now.AddDays(3),
+                        CheckOutDate = DateTime.Now.AddDays(5),
+                        CreatedAt = DateTime.Now,
+                        UpdatedAt = DateTime.Now
+                    }
+                };
+                await context.Booking.AddRangeAsync(bookings);
+                await context.SaveChangesAsync();
+            }
+
+
+        }
+
+    }
 }
