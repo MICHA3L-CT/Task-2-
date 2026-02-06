@@ -106,40 +106,80 @@ namespace Task2.Data
 
 
         // Seed bookings
-      public static async Task SeedBookingsAsync(ApplicationDbContext context)
+        public static async Task SeedBookingsAsync(ApplicationDbContext context)
         {
-            if (!await context.Booking.AnyAsync())
-            {
-                var Room1 = await context.Room.SingleOrDefaultAsync(x => x.RoomName == "Deluxe Suite");
-                if (Room1 == null)
-                    return;
+            var room = await context.Room.FirstOrDefaultAsync(r => r.RoomName == "Deluxe Suite");
+            if (room == null)
+                return;
 
-                var bookings = new Booking
+            if (await context.Booking.AnyAsync(b => b.RoomId == room.RoomId))
+                return;
+
+            var staff = await context.Staff.FirstOrDefaultAsync(s => s.StaffId == 1);
+            if (staff == null)
+            {
+                staff = new Staff
                 {
-                    RoomId = Room1.RoomId,
-                    StaffId = 1,
-                    GuestName = "Michael Jackson",
-                    NumberOfGuests = 2,
-                    BookingDate = DateOnly.FromDateTime(DateTime.Now),
-                    CheckInDate = DateTime.Now.AddDays(7),
-                    CheckOutDate = DateTime.Now.AddDays(10),
-                    CreatedAt = DateTime.Now,
-                    UpdatedAt = DateTime.Now
+                    FirstName = "Fred",
+                    LastName = "Johnson",
+                    Department = "Default Department",
+                    Email = "staff123@gmail.com",
+                    PhoneNumber = "123-456-7890",
+                    IsActive = true
                 };
 
-                await context.Booking.AddAsync(bookings);
-
-                var staff = await context.Staff.SingleOrDefaultAsync(x => x.StaffId == 1);
-                if (staff == null)
-                {
-                    staff = new Staff { StaffId = 1, LastName = "Johnson" };
-                    await context.Staff.AddAsync(staff);
-                    await context.SaveChangesAsync();
-                }
+                await context.Staff.AddAsync(staff);
                 await context.SaveChangesAsync();
             }
+
+            var now = DateTime.UtcNow;
+
+            var bookings = new List<Booking>
+            {
+                new Booking
+                {
+                    RoomId = room.RoomId,
+                    StaffId = staff.StaffId,
+                    GuestName = "Michael Jackson",
+                    NumberOfGuests = 2,
+                    BookingDate = DateOnly.FromDateTime(now),
+                    CheckInDate = now.AddDays(7),
+                    CheckOutDate = now.AddDays(10),
+                    CreatedAt = now,
+                    UpdatedAt = now
+                },
+                new Booking
+                {
+                    RoomId = room.RoomId,
+                    StaffId = staff.StaffId,
+                    GuestName = "Sarah Connor",
+                    NumberOfGuests = 2, // 
+                    BookingDate = DateOnly.FromDateTime(now),
+                    CheckInDate = now.AddDays(12),
+                    CheckOutDate = now.AddDays(14),
+                    CreatedAt = now,
+                    UpdatedAt = now
+                },
+                new Booking
+                {
+                    RoomId = room.RoomId,
+                    StaffId = staff.StaffId,
+                    GuestName = "John Wick",
+                    NumberOfGuests = 2,
+                    BookingDate = DateOnly.FromDateTime(now),
+                    CheckInDate = now.AddDays(18),
+                    CheckOutDate = now.AddDays(22),
+                    CreatedAt = now,
+                    UpdatedAt = now
+                }
+            };
+
+            await context.Booking.AddRangeAsync(bookings);
+            await context.SaveChangesAsync();
         }
+
+
     }
 }
 
-   
+

@@ -20,10 +20,27 @@ namespace CityPoint.Controllers
         }
 
         // GET: Rooms
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(bool? isAvailable, int? minCapacity, int? maxCapacity, decimal? maxPrice)
         {
-            return View(await _context.Room.ToListAsync());
-        }
+            var rooms = _context.Room.AsQueryable();
+            if (isAvailable == true)
+            {
+                rooms = rooms.Where(r => r.IsAvailable);
+            }
+            if (minCapacity.HasValue)
+            {
+                rooms = rooms.Where(r => r.Capacity >= minCapacity);
+            }
+            if (maxCapacity.HasValue)
+            {
+                rooms = rooms.Where(r => r.Capacity >= maxCapacity);
+            }
+            if (maxPrice.HasValue)
+            {
+                rooms = rooms.Where(r => r.PricePerNight <= maxPrice.Value);
+            }
+            return View(await rooms.ToListAsync());
+        }   
 
         // GET: Rooms/Details/5
         public async Task<IActionResult> Details(int? id)
