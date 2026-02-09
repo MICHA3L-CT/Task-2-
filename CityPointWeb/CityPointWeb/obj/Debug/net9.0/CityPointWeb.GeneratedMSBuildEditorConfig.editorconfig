@@ -17,109 +17,109 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CityPointWeb
 build_property.RootNamespace = CityPointWeb
-build_property.ProjectDir = C:\Users\User\source\repos\CityPointWeb\CityPointWeb\
+build_property.ProjectDir = \\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\User\source\repos\CityPointWeb\CityPointWeb
+build_property.MSBuildProjectDirectory = \\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Areas/Identity/Pages/_ViewStart.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/BookingStatusHistories/Create.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/BookingStatusHistories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/BookingStatusHistories/Delete.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/BookingStatusHistories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/BookingStatusHistories/Details.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/BookingStatusHistories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/BookingStatusHistories/Edit.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/BookingStatusHistories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/BookingStatusHistories/Index.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/BookingStatusHistories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Bookings/Create.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Bookings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Bookings/Delete.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Bookings/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Bookings/Details.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Bookings/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Bookings/Edit.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Bookings/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Bookings/Index.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Bookings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Home/Index.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Home/Privacy.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Rooms/Create.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Rooms/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Rooms/Delete.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Rooms/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Rooms/Details.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Rooms/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Rooms/Edit.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Rooms/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Rooms/Index.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Rooms/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Shared/Error.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Shared/_LoginPartial.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/_ViewImports.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/_ViewStart.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/CityPointWeb/CityPointWeb/Views/Shared/_Layout.cshtml]
+[//dom.sandwell.ac.uk/Student/HomeEven/721242/GitHub/Task-2-/CityPointWeb/CityPointWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ouvsxzljp9

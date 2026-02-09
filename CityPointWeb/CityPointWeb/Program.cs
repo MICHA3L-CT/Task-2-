@@ -11,6 +11,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
@@ -18,12 +19,16 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
-    var context = services.GetRequiredService<ApplicationDbContext>();
-    var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
 
-    await SeedData.SeedRoomsAsync(context);
-    await SeedData.SeedBookingsAsync(services, userManager);
+    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+
+    await SeedData.SeedRoomsAsync(context); // 1?? Rooms
+    await SeedData.SeedRoles(services, userManager, roleManager); // 2?? Roles + Users
+    await SeedData.SeedBookingsAsync(services); // 3?? Bookings
 }
+
 
 
 // Configure the HTTP request pipeline.

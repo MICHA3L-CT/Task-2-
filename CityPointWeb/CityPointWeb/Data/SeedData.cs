@@ -104,25 +104,60 @@ namespace CityPointWeb.Data
             }
         }
 
-        //Seed Bookings
-        public static async Task SeedBookingsAsync(IServiceProvider serviceProvider, UserManager<IdentityUser> userManager)
+
+        // Seed Users
+        public static async Task SeedRoles(IServiceProvider serviceProvider, UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
         {
-            using var scope = serviceProvider.CreateScope();
-            var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-
-            if (!context.Booking.Any())
+            string[] roleNames = { "Admin", "User" };
+            foreach (var roleName in roleNames)
             {
-                var user1 = await userManager.FindByEmailAsync("user1@example.com");
-                var user2 = await userManager.FindByEmailAsync("user2@example.com");
+                var roleExists = await roleManager.RoleExistsAsync(roleName);
+                if (!roleExists)
+                {
+                    var role = new IdentityRole(roleName);
+                    await roleManager.CreateAsync(role);
+                }
+            }
+
+            var adminUser = await userManager.FindByEmailAsync("admin@example.com");
+            if (adminUser == null)
+            {
+                adminUser = new IdentityUser { UserName = "admin@example.com", Email = "admin@example.com", EmailConfirmed = true };
+                await userManager.CreateAsync(adminUser, "Admin@123");
+
+            }
+
+            if (!await userManager.IsInRoleAsync(adminUser, "Admin"))
+            {
+                await userManager.AddToRoleAsync(adminUser, "Admin");
+            }
+        }
 
 
-                if (user1 != null && user2 != null)
-                {
-                    var Bookings = new List<Booking>
-                {
+        //Seed Bookings
+        public static async Task SeedBookingsAsync(IServiceProvider serviceProvider)
+        {
+                    using var scope = serviceProvider.CreateScope();
+                    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+                    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+
+                    if (await context.Booking.AnyAsync())
+                        return;
+
+                    var user1 = await userManager.FindByEmailAsync("user1@example.com");
+                    var user2 = await userManager.FindByEmailAsync("user2@example.com");
+
+                    if (user1 == null || user2 == null)
+                        return;
+
+                    var room1 = await context.Room.FirstAsync();
+                    var room2 = await context.Room.Skip(1).FirstAsync();
+
+                    var bookings = new List<Booking>
+                    {
                         new Booking
                         {
-                            RoomId = 1,
+                            RoomId = room1.RoomId,
                             GuestName = "John Doe",
                             Email = "guest1@example.com",
                             PhoneNumber = "123-456-7890",
@@ -134,7 +169,7 @@ namespace CityPointWeb.Data
                         },
                         new Booking
                         {
-                            RoomId = 2,
+                            RoomId = room2.RoomId,
                             GuestName = "Jane Smith",
                             Email = "guest2@example.com",
                             PhoneNumber = "987-654-3210",
@@ -143,16 +178,16 @@ namespace CityPointWeb.Data
                             TotalPrice = 500,
                             BookingStatus = "Pending",
                             UserID = user2.Id
-
                         }
                     };
-                    await context.Booking.AddRangeAsync(Bookings);
+
+                    context.Booking.AddRange(bookings);
                     await context.SaveChangesAsync();
-
-                }
-
-
-            }
         }
+
+
+
     }
 }
+    
+
