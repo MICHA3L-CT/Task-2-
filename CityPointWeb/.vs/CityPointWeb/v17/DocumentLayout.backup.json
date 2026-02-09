@@ -46,8 +46,7 @@
               "RelativeToolTip": "CityPointWeb\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-09T16:05:34.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-09T16:05:34.591Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "CityPointWeb\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAL0AAAAAAAAAAAAYwOgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-09T15:41:48.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-09T15:41:48.354Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "CityPointWeb\\wwwroot\\js\\home.js",
               "ViewState": "AgIAACgBAAAAAAAAAAAuwC4BAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-09T15:37:30.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-09T15:37:30.979Z"
             },
             {
               "$type": "Document",
@@ -83,7 +80,7 @@
               "RelativeDocumentMoniker": "CityPointWeb\\wwwroot\\css\\home.css",
               "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\css\\home.css",
               "RelativeToolTip": "CityPointWeb\\wwwroot\\css\\home.css",
-              "ViewState": "AgIAAOYCAAAAAAAAAAAiwBEDAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAO0CAAAAAAAAAAAiwBgDAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-02-09T15:37:15.608Z",
               "EditorCaption": ""
@@ -98,8 +95,7 @@
               "RelativeToolTip": "CityPointWeb\\Views\\Rooms\\Index.cshtml",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-09T15:19:34.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-09T15:19:34.66Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "CityPointWeb\\Controllers\\RoomsController.cs",
               "ViewState": "AgIAAMIAAAAAAAAAAAAwwOwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T11:47:31.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-09T11:47:31.397Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "CityPointWeb\\Controllers\\BookingsController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowO0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T11:46:26.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-09T11:46:26.805Z"
             }
           ]
         }
