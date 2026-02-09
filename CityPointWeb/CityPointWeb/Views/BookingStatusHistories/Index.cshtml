@@ -1,0 +1,53 @@
+﻿@model IEnumerable<CityPointWeb.Models.BookingStatusHistory>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OldStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChangedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OldStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NewStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChangedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Booking.BookingId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BookingStatusHistoryId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BookingStatusHistoryId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BookingStatusHistoryId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
