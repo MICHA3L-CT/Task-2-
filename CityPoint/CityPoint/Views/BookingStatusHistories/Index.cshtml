@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Task2.Models.BookingStatusHistory>
+﻿@model IEnumerable<CityPoint.Models.BookingStatusHistory>
 
 @{
     ViewData["Title"] = "Index";
@@ -24,6 +24,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Booking)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChangedByUser)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -41,6 +44,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Booking.BookingId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChangedByUser.Id)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.BookingStatusHistoryId">Edit</a> |

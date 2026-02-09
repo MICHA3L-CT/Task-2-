@@ -17,109 +17,109 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Citypoint_Bookings
 build_property.RootNamespace = Citypoint_Bookings
-build_property.ProjectDir = C:\Users\721242\source\repos\Citypoint Bookings\Citypoint Bookings\
+build_property.ProjectDir = C:\Users\User\OneDrive\Documents\Task-2-\Citypoint Bookings\Citypoint Bookings\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\721242\source\repos\Citypoint Bookings\Citypoint Bookings
+build_property.MSBuildProjectDirectory = C:\Users\User\OneDrive\Documents\Task-2-\Citypoint Bookings\Citypoint Bookings
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/BookingStatusHistories/Create.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/BookingStatusHistories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/BookingStatusHistories/Delete.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/BookingStatusHistories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/BookingStatusHistories/Details.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/BookingStatusHistories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/BookingStatusHistories/Edit.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/BookingStatusHistories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/BookingStatusHistories/Index.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/BookingStatusHistories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1N0YXR1c0hpc3Rvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Bookings/Create.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Bookings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Bookings/Delete.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Bookings/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Bookings/Details.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Bookings/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Bookings/Edit.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Bookings/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Bookings/Index.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Bookings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Home/Index.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Home/Privacy.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Rooms/Create.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Rooms/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Rooms/Delete.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Rooms/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Rooms/Details.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Rooms/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Rooms/Edit.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Rooms/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Rooms/Index.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Rooms/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Shared/Error.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/_ViewImports.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/_ViewStart.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/721242/source/repos/Citypoint Bookings/Citypoint Bookings/Views/Shared/_Layout.cshtml]
+[C:/Users/User/OneDrive/Documents/Task-2-/Citypoint Bookings/Citypoint Bookings/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-yr3iuasfgl

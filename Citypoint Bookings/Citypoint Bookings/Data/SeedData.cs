@@ -105,39 +105,70 @@ namespace Citypoint_Bookings.Data
         }
 
         //Seed Bookings
-        public static async Task SeedInstallationAsync(IServiceProvider serviceProvider, UserManager<IdentityUser> userManager)
+        public static async Task SeedBookingsAsync(IServiceProvider serviceProvider, UserManager<ApplicationUser> userManager)
         {
             using var scope = serviceProvider.CreateScope();
             var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
-            if (!context.Installations.Any())
+            if (!context.Booking.Any())
             {
                 var user1 = await userManager.FindByEmailAsync("user1@example.com");
                 var user2 = await userManager.FindByEmailAsync("user2@example.com");
 
-                if(user1 !=null && user2 !=null)
+
+                if (user1 == null)
                 {
-                    var installations = new List<Installations>
+                    user1 = new ApplicationUser
                     {
-                        new Installations
+                        UserName = "user1@example.com",
+                        Email = "user1@example.com",
+                        EmailConfirmed = true
+                    };
+                    await userManager.CreateAsync(user1, "Password123!");
+                }
+
+                if (user2 == null)
+                {
+                    user2 = new ApplicationUser
+                    {
+                        UserName = "user2@example.com",
+                        Email = "user2@example.com",
+                        EmailConfirmed = true
+                    };
+                    await userManager.CreateAsync(user2, "Password123!");
+                }
+
+                var Bookings = new List<Booking>
+                {
+                        new Booking
                         {
-                            Name = "Installation 1",
-                            Description = "Description for Installation 1",
-                            Date = DateTime.Now.AddDays(10),
+                            RoomId = 1,
+                            GuestName = "John Doe",
+                            Email = "guest1@example.com",
+                            PhoneNumber = "123-456-7890",
+                            CheckInDate = DateTime.Now.AddDays(10),
+                            CheckOutDate = DateTime.Now.AddDays(15),
+                            TotalPrice = 1250,
+                            BookingStatus = "Confirmed",
                             UserId = user1.Id
                         },
-                        new Installations
+                        new Booking
                         {
-                            Name = "Installation 2",
-                            Description = "Description for Installation 2",
-                            Date = DateTime.Now.AddDays(20),
+                            RoomId = 2,
+                            GuestName = "Jane Smith",
+                            Email = "guest2@example.com",
+                            PhoneNumber = "987-654-3210",
+                            CheckInDate = DateTime.Now.AddDays(20),
+                            CheckOutDate = DateTime.Now.AddDays(25),
+                            TotalPrice = 500,
+                            BookingStatus = "Pending",
                             UserId = user2.Id
-                        }
-                    };
-                    await context.Installations.AddRangeAsync(installations);
-                    await context.SaveChangesAsync();
-                }
-        }
 
+                        }
+                };
+                await context.Booking.AddRangeAsync(Bookings);
+                await context.SaveChangesAsync();
+            }
+        }
     }
 }

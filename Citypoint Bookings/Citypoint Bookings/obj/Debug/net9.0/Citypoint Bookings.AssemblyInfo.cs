@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Citypoint Bookings")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cc86ea5defc6af0221c61688c6473eae5b43e39")]
 [assembly: System.Reflection.AssemblyProductAttribute("Citypoint Bookings")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Citypoint Bookings")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

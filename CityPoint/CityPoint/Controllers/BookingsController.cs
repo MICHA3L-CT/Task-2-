@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CityPoint.Data;
-using Task2.Models;
+using CityPoint.Models;
 
 namespace CityPoint.Controllers
 {
@@ -22,7 +22,7 @@ namespace CityPoint.Controllers
         // GET: Bookings
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Booking.Include(b => b.Room).Include(b => b.Staff);
+            var applicationDbContext = _context.Booking.Include(b => b.Room).Include(b => b.User);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -36,7 +36,7 @@ namespace CityPoint.Controllers
 
             var booking = await _context.Booking
                 .Include(b => b.Room)
-                .Include(b => b.Staff)
+                .Include(b => b.User)
                 .FirstOrDefaultAsync(m => m.BookingId == id);
             if (booking == null)
             {
@@ -50,7 +50,7 @@ namespace CityPoint.Controllers
         public IActionResult Create()
         {
             ViewData["RoomId"] = new SelectList(_context.Set<Room>(), "RoomId", "RoomId");
-            ViewData["StaffId"] = new SelectList(_context.Set<Staff>(), "StaffId", "StaffId");
+            ViewData["UserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id");
             return View();
         }
 
@@ -59,7 +59,7 @@ namespace CityPoint.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BookingId,RoomId,StaffId,GuestName,NumberOfGuests,BookingDate,CheckInDate,CheckOutDate,CreatedAt,UpdatedAt")] Booking booking)
+        public async Task<IActionResult> Create([Bind("BookingId,UserId,RoomId,GuestName,Email,PhoneNumber,CheckInDate,CheckOutDate,TotalPrice,BookingStatus,CreatedAt,UpdatedAt")] Booking booking)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +68,7 @@ namespace CityPoint.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["RoomId"] = new SelectList(_context.Set<Room>(), "RoomId", "RoomId", booking.RoomId);
-            ViewData["StaffId"] = new SelectList(_context.Set<Staff>(), "StaffId", "StaffId", booking.StaffId);
+            ViewData["UserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", booking.UserId);
             return View(booking);
         }
 
@@ -86,7 +86,7 @@ namespace CityPoint.Controllers
                 return NotFound();
             }
             ViewData["RoomId"] = new SelectList(_context.Set<Room>(), "RoomId", "RoomId", booking.RoomId);
-            ViewData["StaffId"] = new SelectList(_context.Set<Staff>(), "StaffId", "StaffId", booking.StaffId);
+            ViewData["UserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", booking.UserId);
             return View(booking);
         }
 
@@ -95,7 +95,7 @@ namespace CityPoint.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BookingId,RoomId,StaffId,GuestName,NumberOfGuests,BookingDate,CheckInDate,CheckOutDate,CreatedAt,UpdatedAt")] Booking booking)
+        public async Task<IActionResult> Edit(int id, [Bind("BookingId,UserId,RoomId,GuestName,Email,PhoneNumber,CheckInDate,CheckOutDate,TotalPrice,BookingStatus,CreatedAt,UpdatedAt")] Booking booking)
         {
             if (id != booking.BookingId)
             {
@@ -123,7 +123,7 @@ namespace CityPoint.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["RoomId"] = new SelectList(_context.Set<Room>(), "RoomId", "RoomId", booking.RoomId);
-            ViewData["StaffId"] = new SelectList(_context.Set<Staff>(), "StaffId", "StaffId", booking.StaffId);
+            ViewData["UserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", booking.UserId);
             return View(booking);
         }
 
@@ -137,7 +137,7 @@ namespace CityPoint.Controllers
 
             var booking = await _context.Booking
                 .Include(b => b.Room)
-                .Include(b => b.Staff)
+                .Include(b => b.User)
                 .FirstOrDefaultAsync(m => m.BookingId == id);
             if (booking == null)
             {

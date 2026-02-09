@@ -1,12 +1,12 @@
-﻿using CityPoint.Data;
+﻿using CityPoint.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
-using Task2.Models;
 
-namespace Task2.Data
+namespace CityPoint.Data
 {
     public class SeedData
     {
+
         public static async Task SeedRoomsAsync(ApplicationDbContext context)
         {
             // Seed Rooms
@@ -104,82 +104,71 @@ namespace Task2.Data
             }
         }
 
-
-        // Seed bookings
-        public static async Task SeedBookingsAsync(ApplicationDbContext context)
+        //Seed Bookings
+        public static async Task SeedBookingsAsync(IServiceProvider serviceProvider, UserManager<IdentityUser> userManager)
         {
-            var room = await context.Room.FirstOrDefaultAsync(r => r.RoomName == "Deluxe Suite");
-            if (room == null)
-                return;
+            using var scope = serviceProvider.CreateScope();
+            var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
-            if (await context.Booking.AnyAsync(b => b.RoomId == room.RoomId))
-                return;
-
-            var staff = await context.Staff.FirstOrDefaultAsync(s => s.StaffId == 1);
-            if (staff == null)
+            if (!context.Booking.Any())
             {
-                staff = new Staff
-                {
-                    FirstName = "Fred",
-                    LastName = "Johnson",
-                    Department = "Default Department",
-                    Email = "staff123@gmail.com",
-                    PhoneNumber = "123-456-7890",
-                    IsActive = true
-                };
+                var user1 = await userManager.FindByEmailAsync("user1@example.com");
+                var user2 = await userManager.FindByEmailAsync("user2@example.com");
 
-                await context.Staff.AddAsync(staff);
+
+                if (user1 == null)
+                {
+                    user1 = new ApplicationUser
+                    {
+                        UserName = "user1@example.com",
+                        Email = "user1@example.com",
+                        EmailConfirmed = true
+                    };
+                    await userManager.CreateAsync(user1, "Password123!");
+                }
+
+                if (user2 == null)
+                {
+                    user2 = new ApplicationUser
+                    {
+                        UserName = "user2@example.com",
+                        Email = "user2@example.com",
+                        EmailConfirmed = true
+                    };
+                    await userManager.CreateAsync(user2, "Password123!");
+                }
+
+                var Bookings = new List<Booking>
+                {
+                        new Booking
+                        {
+                            RoomId = 1,
+                            GuestName = "John Doe",
+                            Email = "guest1@example.com",
+                            PhoneNumber = "123-456-7890",
+                            CheckInDate = DateTime.Now.AddDays(10),
+                            CheckOutDate = DateTime.Now.AddDays(15),
+                            TotalPrice = 1250,
+                            BookingStatus = "Confirmed",
+                            UserId = user1.Id
+                        },
+                        new Booking
+                        {
+                            RoomId = 2,
+                            GuestName = "Jane Smith",
+                            Email = "guest2@example.com",
+                            PhoneNumber = "987-654-3210",
+                            CheckInDate = DateTime.Now.AddDays(20),
+                            CheckOutDate = DateTime.Now.AddDays(25),
+                            TotalPrice = 500,
+                            BookingStatus = "Pending",
+                            UserId = user2.Id
+
+                        }
+                };
+                await context.Booking.AddRangeAsync(Bookings);
                 await context.SaveChangesAsync();
             }
-
-            var now = DateTime.UtcNow;
-
-            var bookings = new List<Booking>
-            {
-                new Booking
-                {
-                    RoomId = room.RoomId,
-                    StaffId = staff.StaffId,
-                    GuestName = "Michael Jackson",
-                    NumberOfGuests = 2,
-                    BookingDate = DateOnly.FromDateTime(now),
-                    CheckInDate = now.AddDays(7),
-                    CheckOutDate = now.AddDays(10),
-                    CreatedAt = now,
-                    UpdatedAt = now
-                },
-                new Booking
-                {
-                    RoomId = room.RoomId,
-                    StaffId = staff.StaffId,
-                    GuestName = "Sarah Connor",
-                    NumberOfGuests = 2, // 
-                    BookingDate = DateOnly.FromDateTime(now),
-                    CheckInDate = now.AddDays(12),
-                    CheckOutDate = now.AddDays(14),
-                    CreatedAt = now,
-                    UpdatedAt = now
-                },
-                new Booking
-                {
-                    RoomId = room.RoomId,
-                    StaffId = staff.StaffId,
-                    GuestName = "John Wick",
-                    NumberOfGuests = 2,
-                    BookingDate = DateOnly.FromDateTime(now),
-                    CheckInDate = now.AddDays(18),
-                    CheckOutDate = now.AddDays(22),
-                    CreatedAt = now,
-                    UpdatedAt = now
-                }
-            };
-
-            await context.Booking.AddRangeAsync(bookings);
-            await context.SaveChangesAsync();
         }
-
-
     }
 }
-
-

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CityPoint.Data;
-using Task2.Models;
+using CityPoint.Models;
 
 namespace CityPoint.Controllers
 {
@@ -22,7 +22,7 @@ namespace CityPoint.Controllers
         // GET: BookingStatusHistories
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.BookingStatusHistory.Include(b => b.Booking);
+            var applicationDbContext = _context.BookingStatusHistory.Include(b => b.Booking).Include(b => b.ChangedByUser);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -36,6 +36,7 @@ namespace CityPoint.Controllers
 
             var bookingStatusHistory = await _context.BookingStatusHistory
                 .Include(b => b.Booking)
+                .Include(b => b.ChangedByUser)
                 .FirstOrDefaultAsync(m => m.BookingStatusHistoryId == id);
             if (bookingStatusHistory == null)
             {
@@ -49,6 +50,7 @@ namespace CityPoint.Controllers
         public IActionResult Create()
         {
             ViewData["BookingId"] = new SelectList(_context.Booking, "BookingId", "BookingId");
+            ViewData["ChangedByUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id");
             return View();
         }
 
@@ -57,7 +59,7 @@ namespace CityPoint.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BookingStatusHistoryId,BookingId,OldStatus,NewStatus,ChangedAt")] BookingStatusHistory bookingStatusHistory)
+        public async Task<IActionResult> Create([Bind("BookingStatusHistoryId,BookingId,OldStatus,NewStatus,ChangedAt,ChangedByUserId")] BookingStatusHistory bookingStatusHistory)
         {
             if (ModelState.IsValid)
             {
@@ -66,6 +68,7 @@ namespace CityPoint.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["BookingId"] = new SelectList(_context.Booking, "BookingId", "BookingId", bookingStatusHistory.BookingId);
+            ViewData["ChangedByUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", bookingStatusHistory.ChangedByUserId);
             return View(bookingStatusHistory);
         }
 
@@ -83,6 +86,7 @@ namespace CityPoint.Controllers
                 return NotFound();
             }
             ViewData["BookingId"] = new SelectList(_context.Booking, "BookingId", "BookingId", bookingStatusHistory.BookingId);
+            ViewData["ChangedByUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", bookingStatusHistory.ChangedByUserId);
             return View(bookingStatusHistory);
         }
 
@@ -91,7 +95,7 @@ namespace CityPoint.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BookingStatusHistoryId,BookingId,OldStatus,NewStatus,ChangedAt")] BookingStatusHistory bookingStatusHistory)
+        public async Task<IActionResult> Edit(int id, [Bind("BookingStatusHistoryId,BookingId,OldStatus,NewStatus,ChangedAt,ChangedByUserId")] BookingStatusHistory bookingStatusHistory)
         {
             if (id != bookingStatusHistory.BookingStatusHistoryId)
             {
@@ -119,6 +123,7 @@ namespace CityPoint.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["BookingId"] = new SelectList(_context.Booking, "BookingId", "BookingId", bookingStatusHistory.BookingId);
+            ViewData["ChangedByUserId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", bookingStatusHistory.ChangedByUserId);
             return View(bookingStatusHistory);
         }
 
@@ -132,6 +137,7 @@ namespace CityPoint.Controllers
 
             var bookingStatusHistory = await _context.BookingStatusHistory
                 .Include(b => b.Booking)
+                .Include(b => b.ChangedByUser)
                 .FirstOrDefaultAsync(m => m.BookingStatusHistoryId == id);
             if (bookingStatusHistory == null)
             {

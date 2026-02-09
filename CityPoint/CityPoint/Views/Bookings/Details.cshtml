@@ -1,4 +1,4 @@
-﻿@model Task2.Models.Booking
+﻿@model CityPoint.Models.Booking
 
 @{
     ViewData["Title"] = "Details";
@@ -11,22 +11,34 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.User)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.User.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Room)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Room.RoomId)
+        </dd>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.GuestName)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.GuestName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NumberOfGuests)
+            @Html.DisplayNameFor(model => model.Email)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NumberOfGuests)
+            @Html.DisplayFor(model => model.Email)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.BookingDate)
+            @Html.DisplayNameFor(model => model.PhoneNumber)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.BookingDate)
+            @Html.DisplayFor(model => model.PhoneNumber)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.CheckInDate)
@@ -41,6 +53,18 @@
             @Html.DisplayFor(model => model.CheckOutDate)
         </dd>
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalPrice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BookingStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BookingStatus)
+        </dd>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.CreatedAt)
         </dt>
         <dd class = "col-sm-10">
@@ -51,18 +75,6 @@
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.UpdatedAt)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Room)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Room.RoomId)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Staff)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Staff.StaffId)
         </dd>
     </dl>
 </div>

@@ -1,4 +1,4 @@
-﻿namespace Task2.Models
+﻿namespace CityPoint.Models
 {
     public class Room
     {

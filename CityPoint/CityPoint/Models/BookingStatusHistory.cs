@@ -1,4 +1,4 @@
-﻿namespace Task2.Models
+﻿namespace CityPoint.Models
 {
     public class BookingStatusHistory
     {
@@ -7,6 +7,8 @@
         public string OldStatus { get; set; }
         public string NewStatus { get; set; }
         public DateTime ChangedAt { get; set; }
-        public Booking Booking { get; set; }
+        public Booking? Booking { get; set; }
+        public string? ChangedByUserId { get; set; }
+        public ApplicationUser? ChangedByUser { get; set; }
     }
 }

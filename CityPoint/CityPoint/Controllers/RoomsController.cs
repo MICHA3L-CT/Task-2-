@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CityPoint.Data;
-using Task2.Models;
+using CityPoint.Models;
 
 namespace CityPoint.Controllers
 {
@@ -20,27 +20,10 @@ namespace CityPoint.Controllers
         }
 
         // GET: Rooms
-        public async Task<IActionResult> Index(bool? isAvailable, int? minCapacity, int? maxCapacity, decimal? maxPrice)
+        public async Task<IActionResult> Index()
         {
-            var rooms = _context.Room.AsQueryable();
-            if (isAvailable == true)
-            {
-                rooms = rooms.Where(r => r.IsAvailable);
-            }
-            if (minCapacity.HasValue)
-            {
-                rooms = rooms.Where(r => r.Capacity >= minCapacity);
-            }
-            if (maxCapacity.HasValue)
-            {
-                rooms = rooms.Where(r => r.Capacity >= maxCapacity);
-            }
-            if (maxPrice.HasValue)
-            {
-                rooms = rooms.Where(r => r.PricePerNight <= maxPrice.Value);
-            }
-            return View(await rooms.ToListAsync());
-        }   
+            return View(await _context.Room.ToListAsync());
+        }
 
         // GET: Rooms/Details/5
         public async Task<IActionResult> Details(int? id)

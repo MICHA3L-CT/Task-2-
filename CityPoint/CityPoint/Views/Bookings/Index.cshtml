@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Task2.Models.Booking>
+﻿@model IEnumerable<CityPoint.Models.Booking>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,13 +13,19 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.User)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.GuestName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NumberOfGuests)
+                @Html.DisplayNameFor(model => model.Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.BookingDate)
+                @Html.DisplayNameFor(model => model.PhoneNumber)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.CheckInDate)
@@ -28,16 +34,16 @@
                 @Html.DisplayNameFor(model => model.CheckOutDate)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.TotalPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookingStatus)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.CreatedAt)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.UpdatedAt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Room)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Staff)
             </th>
             <th></th>
         </tr>
@@ -46,13 +52,19 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.User.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Room.RoomId)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.GuestName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.NumberOfGuests)
+                @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.BookingDate)
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CheckInDate)
@@ -61,16 +73,16 @@
                 @Html.DisplayFor(modelItem => item.CheckOutDate)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.TotalPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookingStatus)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.CreatedAt)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.UpdatedAt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Room.RoomId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Staff.StaffId)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.BookingId">Edit</a> |

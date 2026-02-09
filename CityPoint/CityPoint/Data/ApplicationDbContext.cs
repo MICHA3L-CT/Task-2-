@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Task2.Models;
+using CityPoint.Models;
 
 namespace CityPoint.Data
 {
@@ -10,9 +10,8 @@ namespace CityPoint.Data
             : base(options)
         {
         }
-        public DbSet<Task2.Models.Booking> Booking { get; set; } = default!;
-        public DbSet<Task2.Models.BookingStatusHistory> BookingStatusHistory { get; set; } = default!;
-        public DbSet<Task2.Models.Room> Room { get; set; } = default!;
-        public DbSet<Task2.Models.Staff> Staff { get; set; } = default!;
+        public DbSet<CityPoint.Models.Booking> Booking { get; set; } = default!;
+        public DbSet<CityPoint.Models.BookingStatusHistory> BookingStatusHistory { get; set; } = default!;
+        public DbSet<CityPoint.Models.Room> Room { get; set; } = default!;
     }
 }
