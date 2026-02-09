@@ -3,34 +3,25 @@
   "WorkspaceRootPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\data\\migrations\\20260209114756_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\controllers\\bookingstatushistoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\models\\bookingstatushistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,134 +31,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Data\\SeedData.cs",
-              "RelativeDocumentMoniker": "CityPointWeb\\Data\\SeedData.cs",
-              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Data\\SeedData.cs",
-              "RelativeToolTip": "CityPointWeb\\Data\\SeedData.cs",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAQwKQAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T11:48:32.613Z",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CityPointWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CityPointWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAYwOAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-09T15:41:48.354Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Program.cs",
-              "RelativeDocumentMoniker": "CityPointWeb\\Program.cs",
-              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Program.cs",
-              "RelativeToolTip": "CityPointWeb\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T11:49:39.847Z",
+              "Title": "home.js",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\js\\home.js",
+              "RelativeDocumentMoniker": "CityPointWeb\\wwwroot\\js\\home.js",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\js\\home.js",
+              "RelativeToolTip": "CityPointWeb\\wwwroot\\js\\home.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-09T15:37:30.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CityPointWeb\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CityPointWeb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-09T11:50:16.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20260209114756_InitialCreate.cs",
-              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Data\\Migrations\\20260209114756_InitialCreate.cs",
-              "RelativeDocumentMoniker": "CityPointWeb\\Data\\Migrations\\20260209114756_InitialCreate.cs",
-              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Data\\Migrations\\20260209114756_InitialCreate.cs",
-              "RelativeToolTip": "CityPointWeb\\Data\\Migrations\\20260209114756_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T11:47:56.811Z",
+              "DocumentIndex": 0,
+              "Title": "home.css",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\css\\home.css",
+              "RelativeDocumentMoniker": "CityPointWeb\\wwwroot\\css\\home.css",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\css\\home.css",
+              "RelativeToolTip": "CityPointWeb\\wwwroot\\css\\home.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH8CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-09T15:37:15.608Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Views\\Rooms\\Index.cshtml",
+              "RelativeDocumentMoniker": "CityPointWeb\\Views\\Rooms\\Index.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Views\\Rooms\\Index.cshtml",
+              "RelativeToolTip": "CityPointWeb\\Views\\Rooms\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-09T15:19:34.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "CityPointWeb\\Data\\SeedData.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Data\\SeedData.cs",
+              "RelativeToolTip": "CityPointWeb\\Data\\SeedData.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAmwL4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T15:09:55.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "RoomsController.cs",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Controllers\\RoomsController.cs",
               "RelativeDocumentMoniker": "CityPointWeb\\Controllers\\RoomsController.cs",
               "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Controllers\\RoomsController.cs",
               "RelativeToolTip": "CityPointWeb\\Controllers\\RoomsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAwwOwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-09T11:47:31.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookingStatusHistoriesController.cs",
-              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Controllers\\BookingStatusHistoriesController.cs",
-              "RelativeDocumentMoniker": "CityPointWeb\\Controllers\\BookingStatusHistoriesController.cs",
-              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Controllers\\BookingStatusHistoriesController.cs",
-              "RelativeToolTip": "CityPointWeb\\Controllers\\BookingStatusHistoriesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T11:47:04.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Booking.cs",
-              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Models\\Booking.cs",
-              "RelativeDocumentMoniker": "CityPointWeb\\Models\\Booking.cs",
-              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Models\\Booking.cs",
-              "RelativeToolTip": "CityPointWeb\\Models\\Booking.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T11:44:12.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "BookingsController.cs",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Controllers\\BookingsController.cs",
               "RelativeDocumentMoniker": "CityPointWeb\\Controllers\\BookingsController.cs",
               "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Controllers\\BookingsController.cs",
               "RelativeToolTip": "CityPointWeb\\Controllers\\BookingsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowO0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-09T11:46:26.805Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookingStatusHistory.cs",
-              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Models\\BookingStatusHistory.cs",
-              "RelativeDocumentMoniker": "CityPointWeb\\Models\\BookingStatusHistory.cs",
-              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Models\\BookingStatusHistory.cs",
-              "RelativeToolTip": "CityPointWeb\\Models\\BookingStatusHistory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T11:44:42.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Room.cs",
-              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Models\\Room.cs",
-              "RelativeDocumentMoniker": "CityPointWeb\\Models\\Room.cs",
-              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Models\\Room.cs",
-              "RelativeToolTip": "CityPointWeb\\Models\\Room.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T11:44:26.08Z"
             }
           ]
         }

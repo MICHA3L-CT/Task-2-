@@ -1,6 +1,6 @@
-wwwroot\css\site.css
+wwwroot\css\home.css
 wwwroot\favicon.ico
-wwwroot\js\site.js
+wwwroot\js\home.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -120,6 +120,6 @@ wwwroot\lib\jquery\LICENSE.txt
 \\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
 \\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 \\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-\\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\js\site.js
+\\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\css\home.css
 \\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\favicon.ico
-\\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\css\site.css
+\\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\js\home.js

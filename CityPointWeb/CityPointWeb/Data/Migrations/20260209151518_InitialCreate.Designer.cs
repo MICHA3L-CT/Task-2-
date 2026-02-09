@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CityPointWeb.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260209114756_InitialCreate")]
+    [Migration("20260209151518_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

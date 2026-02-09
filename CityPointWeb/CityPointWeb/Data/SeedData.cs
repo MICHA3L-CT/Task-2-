@@ -105,7 +105,7 @@ namespace CityPointWeb.Data
         }
 
 
-        // Seed Users
+        // Seed UserRoles
         public static async Task SeedRoles(IServiceProvider serviceProvider, UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             string[] roleNames = { "Admin", "User" };
@@ -119,17 +119,33 @@ namespace CityPointWeb.Data
                 }
             }
 
+            // Create Admin user
             var adminUser = await userManager.FindByEmailAsync("admin@example.com");
             if (adminUser == null)
             {
                 adminUser = new IdentityUser { UserName = "admin@example.com", Email = "admin@example.com", EmailConfirmed = true };
                 await userManager.CreateAsync(adminUser, "Admin@123");
-
             }
 
             if (!await userManager.IsInRoleAsync(adminUser, "Admin"))
             {
                 await userManager.AddToRoleAsync(adminUser, "Admin");
+            }
+
+            // Create User1
+            var user1 = await userManager.FindByEmailAsync("user1@example.com");
+            if (user1 == null)
+            {
+                user1 = new IdentityUser { UserName = "user1@example.com", Email = "user1@example.com", EmailConfirmed = true };
+                await userManager.CreateAsync(user1, "User@123");
+            }
+
+            // Create User2
+            var user2 = await userManager.FindByEmailAsync("user2@example.com");
+            if (user2 == null)
+            {
+                user2 = new IdentityUser { UserName = "user2@example.com", Email = "user2@example.com", EmailConfirmed = true };
+                await userManager.CreateAsync(user2, "User@123");
             }
         }
 
@@ -159,10 +175,11 @@ namespace CityPointWeb.Data
                         {
                             RoomId = room1.RoomId,
                             GuestName = "John Doe",
-                            Email = "guest1@example.com",
+                            Email = "user1@example.com",
                             PhoneNumber = "123-456-7890",
                             CheckInDate = DateTime.Now.AddDays(10),
                             CheckOutDate = DateTime.Now.AddDays(15),
+                            CreatedAt = DateTime.Now,
                             TotalPrice = 1250,
                             BookingStatus = "Confirmed",
                             UserID = user1.Id
@@ -171,10 +188,11 @@ namespace CityPointWeb.Data
                         {
                             RoomId = room2.RoomId,
                             GuestName = "Jane Smith",
-                            Email = "guest2@example.com",
+                            Email = "user2@example.com",
                             PhoneNumber = "987-654-3210",
                             CheckInDate = DateTime.Now.AddDays(20),
                             CheckOutDate = DateTime.Now.AddDays(25),
+                            CreatedAt = DateTime.Now,
                             TotalPrice = 500,
                             BookingStatus = "Pending",
                             UserID = user2.Id
