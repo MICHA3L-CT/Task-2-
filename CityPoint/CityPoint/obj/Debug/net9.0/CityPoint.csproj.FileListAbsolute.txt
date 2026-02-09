@@ -414,3 +414,17 @@ C:\Users\User\source\repos\CityPoint\CityPoint\obj\Debug\net9.0\refint\CityPoint
 C:\Users\User\source\repos\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.pdb
 C:\Users\User\source\repos\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.genruntimeconfig.cache
 C:\Users\User\source\repos\CityPoint\CityPoint\obj\Debug\net9.0\ref\CityPoint.dll
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.AssemblyInfo.cs
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.RazorAssemblyInfo.cache
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.RazorAssemblyInfo.cs
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.sourcelink.json
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.dll
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\refint\CityPoint.dll
+C:\Users\User\OneDrive\Documents\Task-2-\CityPoint\CityPoint\obj\Debug\net9.0\CityPoint.pdb
