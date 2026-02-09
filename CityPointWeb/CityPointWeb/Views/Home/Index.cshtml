@@ -2,10 +2,14 @@
     ViewData["Title"] = "Home Page";
 }
 
-<!-- Custom CSS Link -->
-<link rel="stylesheet" href="~/css/home.css" />
+@section Styles {
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="~/css/home.css" />
+    <!-- AOS Library for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+}
 
-<!-- Hero Section -->
+<!-- Hero Section (Outside main wrapper for full-height effect) -->
 <section class="hero-section">
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -23,202 +27,206 @@
     </div>
 </section>
 
-<!-- Features Section -->
-<section class="features-section" id="features">
-    <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2 class="section-title">Why Choose CityPoint?</h2>
-            <p class="section-subtitle">Everything you need for successful meetings and events</p>
-        </div>
-        
-        <div class="features-grid">
-            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319z"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">Easy Booking System</h3>
-                <p class="feature-description">
-                    Book rooms in minutes with our intuitive booking management system. View real-time availability and manage your reservations effortlessly.
-                </p>
+<!-- Main Content Wrapper (Contains all sections below hero) -->
+<main class="main-wrapper">
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Why Choose CityPoint?</h2>
+                <p class="section-subtitle">Everything you need for successful meetings and events</p>
             </div>
-
-            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">Real-Time Availability</h3>
-                <p class="feature-description">
-                    Check room availability instantly with our live calendar. No more double bookings or confusion - see what's available right now.
-                </p>
-            </div>
-
-            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">24/7 Customer Support</h3>
-                <p class="feature-description">
-                    Get help whenever you need it. Access our comprehensive FAQ section or contact our support team for personalized assistance.
-                </p>
-            </div>
-
-            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">Secure & Private</h3>
-                <p class="feature-description">
-                    Your data is protected with enterprise-grade security. GDPR compliant with encrypted storage and secure authentication.
-                </p>
-            </div>
-
-            <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">Account Management</h3>
-                <p class="feature-description">
-                    Create an account to save your preferences, view booking history, and enjoy a personalized experience every time you visit.
-                </p>
-            </div>
-
-            <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
-                <div class="feature-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
-                    </svg>
-                </div>
-                <h3 class="feature-title">Fully Accessible</h3>
-                <p class="feature-description">
-                    Designed for everyone. WCAG 2.1 AA compliant with screen reader support, keyboard navigation, and high contrast modes.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Room Showcase Section -->
-<section class="room-showcase-section">
-    <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2 class="section-title">Featured Rooms</h2>
-            <p class="section-subtitle">Discover our premium spaces designed for your success</p>
-        </div>
-
-        <div class="room-grid">
-            <div class="room-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="room-image">
-                    <div class="room-badge">Premium</div>
-                </div>
-                <div class="room-details">
-                    <h3 class="room-name">Executive Suite</h3>
-                    <p class="room-description">Premium suite with separate seating area and luxury amenities</p>
-                    <div class="room-specs">
-                        <span class="spec"><i class="bi bi-people"></i> 2 People</span>
-                        <span class="spec"><i class="bi bi-arrows-fullscreen"></i> 55 m²</span>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319z"/>
+                        </svg>
                     </div>
-                    <div class="room-footer">
-                        <span class="room-price">£250<span>/night</span></span>
-                        <a href="/Rooms/Index" class="btn-book">View Details</a>
+                    <h3 class="feature-title">Easy Booking System</h3>
+                    <p class="feature-description">
+                        Book rooms in minutes with our intuitive booking management system. View real-time availability and manage your reservations effortlessly.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                        </svg>
                     </div>
+                    <h3 class="feature-title">Real-Time Availability</h3>
+                    <p class="feature-description">
+                        Check room availability instantly with our live calendar. No more double bookings or confusion - see what's available right now.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">24/7 Customer Support</h3>
+                    <p class="feature-description">
+                        Get help whenever you need it. Access our comprehensive FAQ section or contact our support team for personalized assistance.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Secure & Private</h3>
+                    <p class="feature-description">
+                        Your data is protected with enterprise-grade security. GDPR compliant with encrypted storage and secure authentication.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Account Management</h3>
+                    <p class="feature-description">
+                        Create an account to save your preferences, view booking history, and enjoy a personalized experience every time you visit.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Fully Accessible</h3>
+                    <p class="feature-description">
+                        Designed for everyone. WCAG 2.1 AA compliant with screen reader support, keyboard navigation, and high contrast modes.
+                    </p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="room-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="room-image room-image-2">
-                    <div class="room-badge room-badge-popular">Popular</div>
-                </div>
-                <div class="room-details">
-                    <h3 class="room-name">Family Room</h3>
-                    <p class="room-description">Perfect for families with extra beds and larger living area</p>
-                    <div class="room-specs">
-                        <span class="spec"><i class="bi bi-people"></i> 4 People</span>
-                        <span class="spec"><i class="bi bi-arrows-fullscreen"></i> 40 m²</span>
+    <!-- Room Showcase Section -->
+    <section class="room-showcase-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Rooms</h2>
+                <p class="section-subtitle">Discover our premium spaces designed for your success</p>
+            </div>
+
+            <div class="room-grid">
+                <div class="room-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="room-image">
+                        <div class="room-badge">Premium</div>
                     </div>
-                    <div class="room-footer">
-                        <span class="room-price">£180<span>/night</span></span>
-                        <a href="/Rooms/Index" class="btn-book">View Details</a>
+                    <div class="room-details">
+                        <h3 class="room-name">Executive Suite</h3>
+                        <p class="room-description">Premium suite with separate seating area and luxury amenities</p>
+                        <div class="room-specs">
+                            <span class="spec"><i class="bi bi-people"></i> 2 People</span>
+                            <span class="spec"><i class="bi bi-arrows-fullscreen"></i> 55 m²</span>
+                        </div>
+                        <div class="room-footer">
+                            <span class="room-price">£250<span>/night</span></span>
+                            <a href="/Rooms/Index" class="btn-book">View Details</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="room-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="room-image room-image-3">
-                    <div class="room-badge room-badge-luxury">Luxury</div>
-                </div>
-                <div class="room-details">
-                    <h3 class="room-name">Presidential Suite</h3>
-                    <p class="room-description">Ultimate luxury with multiple rooms and exclusive services</p>
-                    <div class="room-specs">
-                        <span class="spec"><i class="bi bi-people"></i> 4 People</span>
-                        <span class="spec"><i class="bi bi-arrows-fullscreen"></i> 85 m²</span>
+                <div class="room-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="room-image room-image-2">
+                        <div class="room-badge room-badge-popular">Popular</div>
                     </div>
-                    <div class="room-footer">
-                        <span class="room-price">£400<span>/night</span></span>
-                        <a href="/Rooms/Index" class="btn-book">View Details</a>
+                    <div class="room-details">
+                        <h3 class="room-name">Family Room</h3>
+                        <p class="room-description">Perfect for families with extra beds and larger living area</p>
+                        <div class="room-specs">
+                            <span class="spec"><i class="bi bi-people"></i> 4 People</span>
+                            <span class="spec"><i class="bi bi-arrows-fullscreen"></i> 40 m²</span>
+                        </div>
+                        <div class="room-footer">
+                            <span class="room-price">£180<span>/night</span></span>
+                            <a href="/Rooms/Index" class="btn-book">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="room-image room-image-3">
+                        <div class="room-badge room-badge-luxury">Luxury</div>
+                    </div>
+                    <div class="room-details">
+                        <h3 class="room-name">Presidential Suite</h3>
+                        <p class="room-description">Ultimate luxury with multiple rooms and exclusive services</p>
+                        <div class="room-specs">
+                            <span class="spec"><i class="bi bi-people"></i> 4 People</span>
+                            <span class="spec"><i class="bi bi-arrows-fullscreen"></i> 85 m²</span>
+                        </div>
+                        <div class="room-footer">
+                            <span class="room-price">£400<span>/night</span></span>
+                            <a href="/Rooms/Index" class="btn-book">View Details</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="text-center mt-5" data-aos="fade-up">
-            <a href="/Rooms/Index" class="btn btn-primary-custom btn-lg">View All Rooms</a>
-        </div>
-    </div>
-</section>
-
-<!-- Stats Section -->
-<section class="stats-section">
-    <div class="container">
-        <div class="stats-grid">
-            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="stat-number" data-count="500">0</div>
-                <div class="stat-label">Happy Customers</div>
-            </div>
-            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="stat-number" data-count="8">0</div>
-                <div class="stat-label">Premium Rooms</div>
-            </div>
-            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="stat-number" data-count="99">0</div>
-                <div class="stat-label">Satisfaction Rate %</div>
-            </div>
-            <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="stat-number" data-count="24">0</div>
-                <div class="stat-label">Support Available 24/7</div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="/Rooms/Index" class="btn btn-primary-custom btn-lg">View All Rooms</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CTA Section -->
-<section class="cta-section">
-    <div class="container">
-        <div class="cta-content" data-aos="fade-up">
-            <h2 class="cta-title">Ready to Book Your Perfect Space?</h2>
-            <p class="cta-subtitle">Join hundreds of satisfied customers and experience premium room hire services</p>
-            <div class="cta-buttons">
-                <a href="/Identity/Account/Register" class="btn btn-light-custom btn-lg">Get Started</a>
-                <a href="/Rooms/Index" class="btn btn-outline-light-custom btn-lg">Browse Rooms</a>
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-count="8">0</div>
+                    <div class="stat-label">Premium Rooms</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-count="99">0</div>
+                    <div class="stat-label">Satisfaction Rate %</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number" data-count="24">0</div>
+                    <div class="stat-label">Support Available 24/7</div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Custom JavaScript -->
-<script src="~/js/home.js"></script>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Ready to Book Your Perfect Space?</h2>
+                <p class="cta-subtitle">Join hundreds of satisfied customers and experience premium room hire services</p>
+                <div class="cta-buttons">
+                    <a href="/Identity/Account/Register" class="btn btn-light-custom btn-lg">Get Started</a>
+                    <a href="/Rooms/Index" class="btn btn-outline-light-custom btn-lg">Browse Rooms</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-<!-- AOS Library for Animations -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+@section Scripts {
+    <!-- Custom JavaScript -->
+    <script src="~/js/home.js"></script>
+    
+    <!-- AOS Library for Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+}
