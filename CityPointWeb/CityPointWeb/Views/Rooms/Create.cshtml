@@ -1,63 +1,135 @@
 ﻿@model CityPointWeb.Models.Room
-
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create Room";
 }
 
-<h1>Create</h1>
+@section Styles {
+    <link rel="stylesheet" href="~/css/rooms.css" />
+}
 
-<h4>Room</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="RoomName" class="control-label"></label>
-                <input asp-for="RoomName" class="form-control" />
-                <span asp-validation-for="RoomName" class="text-danger"></span>
+<!-- Page Header -->
+<div class="page-header-room">
+    <div class="page-header-overlay"></div>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="page-title-room">
+                    <i class="bi bi-plus-circle-fill"></i> Create New Room
+                </h1>
+                <p class="page-subtitle-room">Add a new room to the system</p>
             </div>
-            <div class="form-group">
-                <label asp-for="Roomumber" class="control-label"></label>
-                <input asp-for="Roomumber" class="form-control" />
-                <span asp-validation-for="Roomumber" class="text-danger"></span>
+            <div class="col-md-6 text-md-end">
+                <a asp-action="Index" class="btn-secondary-room">
+                    <i class="bi bi-arrow-left-circle-fill"></i> Back to List
+                </a>
             </div>
-            <div class="form-group">
-                <label asp-for="Capacity" class="control-label"></label>
-                <input asp-for="Capacity" class="form-control" />
-                <span asp-validation-for="Capacity" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PricePerNight" class="control-label"></label>
-                <input asp-for="PricePerNight" class="form-control" />
-                <span asp-validation-for="PricePerNight" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="RoomSize" class="control-label"></label>
-                <input asp-for="RoomSize" class="form-control" />
-                <span asp-validation-for="RoomSize" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsAvailable" /> @Html.DisplayNameFor(model => model.IsAvailable)
-                </label>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<!-- Main Content -->
+<div class="rooms-main-content">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="filter-card-room">
+                    <div class="filter-header-room">
+                        <h5 class="filter-title-room">
+                            <i class="bi bi-door-open-fill"></i> Room Information
+                        </h5>
+                    </div>
+                    <div class="filter-body-room">
+                        <form asp-action="Create" method="post">
+                            <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                            <div class="row g-3">
+                                <!-- Room Name -->
+                                <div class="col-md-6">
+                                    <label asp-for="RoomName" class="form-label-room">
+                                        <i class="bi bi-door-open"></i> Room Name
+                                    </label>
+                                    <input asp-for="RoomName" class="form-control-room" placeholder="e.g., Conference Room A" />
+                                    <span asp-validation-for="RoomName" class="text-danger"></span>
+                                </div>
+
+                                <!-- Room Number -->
+                                <div class="col-md-6">
+                                    <label asp-for="Roomumber" class="form-label-room">
+                                        <i class="bi bi-hash"></i> Room Number
+                                    </label>
+                                    <input asp-for="Roomumber" class="form-control-room" placeholder="e.g., 101" />
+                                    <span asp-validation-for="Roomumber" class="text-danger"></span>
+                                </div>
+
+                                <!-- Capacity -->
+                                <div class="col-md-4">
+                                    <label asp-for="Capacity" class="form-label-room">
+                                        <i class="bi bi-people-fill"></i> Capacity
+                                    </label>
+                                    <input asp-for="Capacity" class="form-control-room" type="number" min="1" placeholder="e.g., 10" />
+                                    <span asp-validation-for="Capacity" class="text-danger"></span>
+                                </div>
+
+                                <!-- Room Size -->
+                                <div class="col-md-4">
+                                    <label asp-for="RoomSize" class="form-label-room">
+                                        <i class="bi bi-arrows-fullscreen"></i> Room Size (m²)
+                                    </label>
+                                    <input asp-for="RoomSize" class="form-control-room" type="number" min="0" step="0.01" placeholder="e.g., 50.5" />
+                                    <span asp-validation-for="RoomSize" class="text-danger"></span>
+                                </div>
+
+                                <!-- Price Per Night -->
+                                <div class="col-md-4">
+                                    <label asp-for="PricePerNight" class="form-label-room">
+                                        <i class="bi bi-currency-pound"></i> Price Per Night (£)
+                                    </label>
+                                    <input asp-for="PricePerNight" class="form-control-room" type="number" min="0" step="0.01" placeholder="e.g., 150.00" />
+                                    <span asp-validation-for="PricePerNight" class="text-danger"></span>
+                                </div>
+
+                                <!-- Description -->
+                                <div class="col-12">
+                                    <label asp-for="Description" class="form-label-room">
+                                        <i class="bi bi-card-text"></i> Description
+                                    </label>
+                                    <textarea asp-for="Description" class="form-control-room" rows="4" placeholder="Enter room description, features, and amenities..."></textarea>
+                                    <span asp-validation-for="Description" class="text-danger"></span>
+                                </div>
+
+                                <!-- Is Available -->
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" asp-for="IsAvailable" id="isAvailableCheck" checked />
+                                        <label class="form-check-label" for="isAvailableCheck">
+                                            <i class="bi bi-check-circle-fill"></i> Room is Available
+                                        </label>
+                                    </div>
+                                    <span asp-validation-for="IsAvailable" class="text-danger"></span>
+                                </div>
+
+                                <!-- Form Actions -->
+                                <div class="col-12">
+                                    <div class="filter-actions-room">
+                                        <button type="submit" class="btn-primary-room">
+                                            <i class="bi bi-check-circle-fill"></i> Create Room
+                                        </button>
+                                        <a asp-action="Index" class="btn-secondary-room">
+                                            <i class="bi bi-x-circle-fill"></i> Cancel
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

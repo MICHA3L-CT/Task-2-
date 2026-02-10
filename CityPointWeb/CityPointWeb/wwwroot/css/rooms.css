@@ -1,0 +1,978 @@
+﻿/* =============================================
+   CityPoint Bookings - Rooms Page Styles
+   Theme: Blue & White with Rounded Edges & Floating Headers
+   Matches Home Page Design
+   ============================================= */
+
+/* Import Color Variables from Home */
+:root {
+    --primary-blue: #1e3a8a;
+    --secondary-blue: #3b82f6;
+    --light-blue: #60a5fa;
+    --lighter-blue: #93c5fd;
+    --lightest-blue: #dbeafe;
+    --dark-blue: #1e40af;
+    --white: #ffffff;
+    --off-white: #f8fafc;
+    --gray-light: #e2e8f0;
+    --gray-medium: #94a3b8;
+    --gray-dark: #475569;
+    --text-dark: #1e293b;
+    --success-green: #10b981;
+    --danger-red: #ef4444;
+    --warning-yellow: #f59e0b;
+    --shadow-sm: 0 2px 8px rgba(30, 58, 138, 0.08);
+    --shadow-md: 0 4px 16px rgba(30, 58, 138, 0.12);
+    --shadow-lg: 0 8px 32px rgba(30, 58, 138, 0.16);
+    --shadow-xl: 0 12px 48px rgba(30, 58, 138, 0.20);
+}
+
+/* =============================================
+   Page Header - Floating Effect like Home Hero
+   ============================================= */
+.page-header-room {
+    position: relative;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    padding: 4rem 0 3rem;
+    margin-bottom: 3rem;
+    color: var(--white);
+    border-radius: 0 0 24px 24px;
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+}
+
+.page-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(96, 165, 250, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.3) 0%, transparent 50%);
+    animation: pulseRoom 8s ease-in-out infinite;
+}
+
+@keyframes pulseRoom {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.page-title-room {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-subtitle-room {
+    position: relative;
+    z-index: 2;
+    font-size: 1.2rem;
+    opacity: 0.95;
+    font-weight: 300;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
+}
+
+/* =============================================
+   Uniform Buttons - Matching Home Page
+   ============================================= */
+.btn-primary-room {
+    background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--light-blue) 100%);
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+}
+
+    .btn-primary-room:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-md);
+        color: var(--white);
+        background: linear-gradient(135deg, var(--light-blue) 0%, var(--secondary-blue) 100%);
+    }
+
+.btn-secondary-room {
+    background: var(--gray-light);
+    color: var(--primary-blue);
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    border: 2px solid var(--gray-light);
+    box-shadow: var(--shadow-sm);
+}
+
+    .btn-secondary-room:hover {
+        background: var(--white);
+        color: var(--primary-blue);
+        border-color: var(--primary-blue);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+    }
+
+.btn-edit-room-mobile,
+.btn-action-room.btn-edit-room {
+    background: linear-gradient(135deg, var(--warning-yellow) 0%, #fbbf24 100%);
+    color: var(--white);
+}
+
+.btn-delete-room-mobile,
+.btn-action-room.btn-delete-room {
+    background: linear-gradient(135deg, var(--danger-red) 0%, #dc2626 100%);
+    color: var(--white);
+}
+
+/* =============================================
+   Main Content Area
+   ============================================= */
+.rooms-main-content {
+    padding-bottom: 4rem;
+    background: var(--off-white);
+}
+
+/* =============================================
+   Filter Card - Floating Effect
+   ============================================= */
+.filter-card-room {
+    background: var(--white);
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray-light);
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+    .filter-card-room:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-xl);
+    }
+
+.filter-header-room {
+    background: linear-gradient(135deg, var(--lightest-blue) 0%, var(--white) 100%);
+    padding: 1.5rem 2rem;
+    border-bottom: 2px solid var(--gray-light);
+}
+
+.filter-title-room {
+    margin: 0;
+}
+
+.filter-toggle-room {
+    background: none;
+    border: none;
+    color: var(--primary-blue);
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+    .filter-toggle-room:hover {
+        color: var(--secondary-blue);
+    }
+
+.toggle-icon-room {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.filter-toggle-room[aria-expanded="false"] .toggle-icon-room {
+    transform: rotate(-90deg);
+}
+
+.filter-body-room {
+    padding: 2.5rem;
+}
+
+/* =============================================
+   Form Controls - Rounded & Styled
+   ============================================= */
+.form-label-room {
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+    .form-label-room i {
+        color: var(--secondary-blue);
+    }
+
+.form-control-room,
+.form-select-room {
+    border: 2px solid var(--gray-light);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+    background: var(--white);
+    font-size: 1rem;
+}
+
+    .form-control-room:focus,
+    .form-select-room:focus {
+        border-color: var(--secondary-blue);
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+        outline: none;
+    }
+
+    .form-control-room::placeholder {
+        color: var(--gray-medium);
+    }
+
+.filter-actions-room {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* =============================================
+   Results Card - Floating Effect
+   ============================================= */
+.results-card-room {
+    background: var(--white);
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray-light);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+    .results-card-room:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-xl);
+    }
+
+.results-header-room {
+    background: linear-gradient(135deg, var(--lightest-blue) 0%, var(--white) 100%);
+    padding: 1.5rem 2rem;
+    border-bottom: 2px solid var(--gray-light);
+}
+
+.results-count-room {
+    margin: 0;
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+    .results-count-room i {
+        color: var(--secondary-blue);
+        font-size: 1.3rem;
+    }
+
+/* =============================================
+   Table Styling
+   ============================================= */
+.rooms-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0;
+}
+
+    .rooms-table thead {
+        background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+        color: var(--white);
+    }
+
+        .rooms-table thead th {
+            padding: 1.5rem 1.5rem;
+            font-weight: 600;
+            text-align: left;
+            border: none;
+            font-size: 1rem;
+        }
+
+.sort-link-room {
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+    .sort-link-room:hover {
+        color: var(--lighter-blue);
+        transform: translateX(2px);
+    }
+
+    .sort-link-room i {
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+
+.room-row {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid var(--gray-light);
+    background: var(--white);
+}
+
+    .room-row:hover {
+        background: var(--lightest-blue);
+        transform: scale(1.01);
+        box-shadow: var(--shadow-sm);
+    }
+
+    .room-row td {
+        padding: 1.5rem 1.5rem;
+        vertical-align: middle;
+    }
+
+.room-name-cell {
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.room-number-badge {
+    background: linear-gradient(135deg, var(--lightest-blue) 0%, var(--lighter-blue) 100%);
+    color: var(--primary-blue);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.description-cell-room {
+    max-width: 300px;
+    color: var(--gray-dark);
+    line-height: 1.5;
+}
+
+.price-room {
+    color: var(--primary-blue);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* =============================================
+   Status Badges
+   ============================================= */
+.badge-available-room {
+    background: linear-gradient(135deg, var(--success-green) 0%, #059669 100%);
+    color: var(--white);
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.badge-unavailable-room {
+    background: linear-gradient(135deg, var(--danger-red) 0%, #dc2626 100%);
+    color: var(--white);
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+/* =============================================
+   Action Buttons
+   ============================================= */
+.action-buttons-room {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-action-room {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+    .btn-action-room.btn-info-room {
+        background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--light-blue) 100%);
+    }
+
+    .btn-action-room.btn-edit-room {
+        background: linear-gradient(135deg, var(--warning-yellow) 0%, #fbbf24 100%);
+    }
+
+    .btn-action-room.btn-delete-room {
+        background: linear-gradient(135deg, var(--danger-red) 0%, #dc2626 100%);
+    }
+
+    .btn-action-room:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-sm);
+        color: var(--white);
+    }
+
+/* =============================================
+   Empty State
+   ============================================= */
+.empty-state-room {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--gray-medium);
+}
+
+    .empty-state-room i {
+        font-size: 4rem;
+        color: var(--lighter-blue);
+        margin-bottom: 1.5rem;
+        display: block;
+    }
+
+    .empty-state-room p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        color: var(--gray-dark);
+    }
+
+/* =============================================
+   Mobile Card View
+   ============================================= */
+.room-card-mobile {
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-light);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+    .room-card-mobile:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+    }
+
+.room-card-header-mobile {
+    background: linear-gradient(135deg, var(--lightest-blue) 0%, var(--white) 100%);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.room-card-title-mobile {
+    margin: 0;
+    color: var(--primary-blue);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.room-card-body-mobile {
+    padding: 1.5rem;
+}
+
+.room-info-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.info-item-mobile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray-dark);
+    font-size: 0.95rem;
+}
+
+    .info-item-mobile i {
+        color: var(--secondary-blue);
+    }
+
+.room-description-mobile {
+    color: var(--gray-dark);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.room-price-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--lightest-blue);
+    border-radius: 12px;
+}
+
+.price-label-mobile {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.room-card-footer-mobile {
+    padding: 1rem 1.5rem;
+    background: var(--off-white);
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    border-top: 1px solid var(--gray-light);
+}
+
+.empty-state-mobile-room {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+}
+
+    .empty-state-mobile-room i {
+        font-size: 3rem;
+        color: var(--lighter-blue);
+        margin-bottom: 1rem;
+    }
+
+    .empty-state-mobile-room p {
+        color: var(--gray-dark);
+        margin-bottom: 1.5rem;
+    }
+
+/* =============================================
+   Responsive Design
+   ============================================= */
+@media (max-width: 991px) {
+    .page-title-room {
+        font-size: 2.5rem;
+        justify-content: center;
+    }
+
+    .page-subtitle-room {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .page-header-room {
+        text-align: center;
+        padding: 3rem 0 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title-room {
+        font-size: 2rem;
+    }
+
+    .filter-body-room {
+        padding: 1.5rem;
+    }
+
+    .filter-actions-room {
+        flex-direction: column;
+    }
+
+        .filter-actions-room .btn-primary-room,
+        .filter-actions-room .btn-secondary-room {
+            width: 100%;
+            justify-content: center;
+        }
+
+    .room-card-header-mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .room-card-footer-mobile {
+        flex-direction: column;
+    }
+
+        .room-card-footer-mobile .btn-primary-room,
+        .room-card-footer-mobile .btn-edit-room-mobile,
+        .room-card-footer-mobile .btn-delete-room-mobile {
+            width: 100%;
+        }
+}
+
+@media (max-width: 480px) {
+    .page-title-room {
+        font-size: 1.75rem;
+    }
+
+    .page-header-room {
+        padding: 2rem 0 1.5rem;
+    }
+
+    .results-header-room {
+        padding: 1rem;
+    }
+
+    .results-count-room {
+        font-size: 1rem;
+    }
+}
+
+/* =============================================
+   Animations
+   ============================================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.filter-card-room,
+.results-card-room {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.filter-card-room {
+    animation-delay: 0.1s;
+}
+
+.results-card-room {
+    animation-delay: 0.2s;
+}
+
+.room-row:nth-child(odd) {
+    animation-delay: 0.05s;
+}
+
+.room-row:nth-child(even) {
+    animation-delay: 0.1s;
+}
+
+.room-card-mobile {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+    .room-card-mobile:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .room-card-mobile:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .room-card-mobile:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    .room-card-mobile:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    .room-card-mobile:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+
+/* =============================================
+   Enhanced Footer Styles - Matching Rooms Page Design
+   Add this to the END of your site.css or create a separate footer.css
+   ============================================= */
+
+footer {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    color: #ffffff;
+    margin-top: 4rem;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px 24px 0 0;
+    box-shadow: 0 -8px 32px rgba(30, 58, 138, 0.16);
+}
+
+    /* Animated background overlay */
+    footer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 20% 50%, rgba(96, 165, 250, 0.2) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.2) 0%, transparent 50%);
+        animation: pulseFooter 8s ease-in-out infinite;
+        pointer-events: none;
+    }
+
+@keyframes pulseFooter {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    padding: 4rem 3rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    position: relative;
+}
+
+    .footer-section h3 {
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 3px solid rgba(96, 165, 250, 0.3);
+        display: inline-block;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-section p {
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .footer-section a {
+        color: rgba(255, 255, 255, 0.85);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+        transition: all 0.3s ease;
+        font-size: 0.95rem;
+    }
+
+        .footer-section a:hover {
+            color: #ffffff;
+            transform: translateX(5px);
+            text-shadow: 0 2px 8px rgba(96, 165, 250, 0.5);
+        }
+
+        .footer-section a i {
+            font-size: 1.1rem;
+            color: #60a5fa;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section a:hover i {
+            color: #93c5fd;
+            transform: scale(1.1);
+        }
+
+        /* Social media links special styling */
+        .footer-section a[href*="facebook"]:hover i {
+            color: #1877f2;
+        }
+
+        .footer-section a[href*="twitter"]:hover i {
+            color: #1da1f2;
+        }
+
+        .footer-section a[href*="linkedin"]:hover i {
+            color: #0077b5;
+        }
+
+        .footer-section a[href*="instagram"]:hover i {
+            color: #e4405f;
+        }
+
+.footer-bottom {
+    position: relative;
+    z-index: 2;
+    background: rgba(30, 58, 138, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 3rem;
+    text-align: center;
+    border-top: 1px solid rgba(96, 165, 250, 0.2);
+}
+
+    .footer-bottom p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom a {
+        color: #93c5fd;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-weight: 600;
+    }
+
+        .footer-bottom a:hover {
+            color: #dbeafe;
+            text-shadow: 0 0 10px rgba(147, 197, 253, 0.5);
+        }
+
+/* Floating card effect for footer sections */
+@media (min-width: 768px) {
+    .footer-section {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 2rem;
+        border-radius: 16px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+    }
+
+        .footer-section:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 3rem 1.5rem 1.5rem;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+        .footer-section h3 {
+            display: block;
+            text-align: center;
+        }
+
+        .footer-section a {
+            justify-content: center;
+        }
+
+    .footer-bottom {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Contact info icons spacing */
+.footer-section p i {
+    margin-right: 0.5rem;
+    color: #60a5fa;
+}
+
+/* Fade in animation */
+@keyframes fadeInFooter {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-section {
+    animation: fadeInFooter 0.6s ease-out;
+}
+
+    .footer-section:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .footer-section:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .footer-section:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    .footer-section:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+/* =============================================
+   CRITICAL FIX - Add this to the END of your rooms.css file
+   This fixes the Create button being covered by the overlay
+   ============================================= */
+
+/* Fix the overlay so it doesn't cover buttons */
+.page-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(96, 165, 250, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.3) 0%, transparent 50%);
+    animation: pulseRoom 8s ease-in-out infinite;
+    pointer-events: none !important; /* THIS IS THE KEY FIX */
+    z-index: 1;
+}
+
+/* Ensure all interactive elements in the header are above the overlay */
+.page-header-room .container-fluid {
+    position: relative;
+    z-index: 10;
+}
+
+/* Ensure the Create button specifically works */
+.page-header-room a.btn-primary-room {
+    pointer-events: auto !important;
+    z-index: 100 !important;
+    position: relative !important;
+}
+
+/* Make sure all text and buttons are above the overlay */
+.page-title-room,
+.page-subtitle-room {
+    position: relative;
+    z-index: 10;
+}

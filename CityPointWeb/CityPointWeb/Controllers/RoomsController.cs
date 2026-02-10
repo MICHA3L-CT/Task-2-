@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CityPointWeb.Data;
 using CityPointWeb.Models;
+using Microsoft.AspNetCore.Authorization; // ADD THIS
 
 namespace CityPointWeb.Controllers
 {
@@ -19,7 +20,7 @@ namespace CityPointWeb.Controllers
             _context = context;
         }
 
-        // GET: Rooms
+        // GET: Rooms - Everyone can view
         public async Task<IActionResult> Index(string searchString, int? minCapacity, int? maxCapacity,
             decimal? minPrice, decimal? maxPrice, bool? isAvailable, string sortOrder)
         {
@@ -109,7 +110,7 @@ namespace CityPointWeb.Controllers
             return View(await rooms.ToListAsync());
         }
 
-        // GET: Rooms/Details/5
+        // GET: Rooms/Details/5 - Everyone can view details
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -127,15 +128,17 @@ namespace CityPointWeb.Controllers
             return View(room);
         }
 
-        // GET: Rooms/Create
+        // GET: Rooms/Create - ADMIN ONLY
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Rooms/Create
+        // POST: Rooms/Create - ADMIN ONLY
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("RoomId,RoomName,Roomumber,Capacity,Description,PricePerNight,RoomSize,IsAvailable")] Room room)
         {
             if (ModelState.IsValid)
@@ -147,7 +150,8 @@ namespace CityPointWeb.Controllers
             return View(room);
         }
 
-        // GET: Rooms/Edit/5
+        // GET: Rooms/Edit/5 - ADMIN ONLY
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -163,9 +167,10 @@ namespace CityPointWeb.Controllers
             return View(room);
         }
 
-        // POST: Rooms/Edit/5
+        // POST: Rooms/Edit/5 - ADMIN ONLY
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("RoomId,RoomName,Roomumber,Capacity,Description,PricePerNight,RoomSize,IsAvailable")] Room room)
         {
             if (id != room.RoomId)
@@ -196,7 +201,8 @@ namespace CityPointWeb.Controllers
             return View(room);
         }
 
-        // GET: Rooms/Delete/5
+        // GET: Rooms/Delete/5 - ADMIN ONLY
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -214,9 +220,10 @@ namespace CityPointWeb.Controllers
             return View(room);
         }
 
-        // POST: Rooms/Delete/5
+        // POST: Rooms/Delete/5 - ADMIN ONLY
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var room = await _context.Room.FindAsync(id);
