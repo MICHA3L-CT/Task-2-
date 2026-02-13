@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CityPointWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c65f8a8de6b36cf0d934b4ce736fe5366c396dc5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+249add3d8fdd6ab18e023afe9d54e0428b79aedb")]
 [assembly: System.Reflection.AssemblyProductAttribute("CityPointWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CityPointWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
