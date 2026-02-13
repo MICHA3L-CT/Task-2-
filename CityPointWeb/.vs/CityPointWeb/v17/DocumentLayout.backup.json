@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\wwwroot\\css\\privacy.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C3F5F071-A142-42AA-94F8-128B7BB1F509}|CityPointWeb\\CityPointWeb.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\721242\\github\\task-2-\\citypointweb\\citypointweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -18,6 +24,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Privacy.css",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\css\\Privacy.css",
+              "RelativeDocumentMoniker": "CityPointWeb\\wwwroot\\css\\Privacy.css",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\css\\Privacy.css",
+              "RelativeToolTip": "CityPointWeb\\wwwroot\\css\\Privacy.css",
+              "ViewState": "AgIAAJsBAAAAAAAAAAAswH8CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-10T10:04:51.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "CityPointWeb\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "CityPointWeb\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAowCQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-10T10:00:58.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CityPointWeb\\Views\\Shared\\_Layout.cshtml",
@@ -25,8 +56,7 @@
               "RelativeToolTip": "CityPointWeb\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-10T09:53:41.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-10T09:53:41.968Z"
             }
           ]
         }

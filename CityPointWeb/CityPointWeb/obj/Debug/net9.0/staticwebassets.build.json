@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H12Pi18gIiWdjc/MQLJV+ZuMGqBzZLQCX2WPjAYGmUw=",
+  "Hash": "WYJPOGAguVnWZ85USJXlrOceDWmY3jtwE/6ppUsEWhE=",
   "Source": "CityPointWeb",
   "BasePath": "_content/CityPointWeb",
   "Mode": "Default",
@@ -2537,6 +2537,27 @@
       "OriginalItemSpec": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\css\\rooms.css"
     },
     {
+      "Identity": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\obj\\Debug\\net9.0\\compressed\\xx18bwg9qj-umg7kijnt0.gz",
+      "SourceId": "CityPointWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/CityPointWeb",
+      "RelativePath": "css/Privacy#[.{fingerprint=umg7kijnt0}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\css\\Privacy.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "7oz5c4kjft",
+      "Integrity": "118R7F4p2sdftw8dYtyLcv4RsbUK9A1WfByx0/SvzIU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\css\\Privacy.css"
+    },
+    {
       "Identity": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\obj\\Debug\\net9.0\\compressed\\yfc7ypekbg-mlv21k5csn.gz",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
@@ -2766,6 +2787,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\home.css"
+    },
+    {
+      "Identity": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\css\\Privacy.css",
+      "SourceId": "CityPointWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\",
+      "BasePath": "_content/CityPointWeb",
+      "RelativePath": "css/Privacy#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "umg7kijnt0",
+      "Integrity": "9lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Privacy.css"
     },
     {
       "Identity": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\css\\rooms.css",
@@ -6327,6 +6369,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-R25G69xJUpKuIXuAE+S2ule+1cRwca4ZBguqhHi8KDI="
+        }
+      ]
+    },
+    {
+      "Route": "css/Privacy.css",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\obj\\Debug\\net9.0\\compressed\\xx18bwg9qj-umg7kijnt0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000373831776"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2674"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"118R7F4p2sdftw8dYtyLcv4RsbUK9A1WfByx0/SvzIU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Feb 2026 10:04:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc="
+        }
+      ]
+    },
+    {
+      "Route": "css/Privacy.css",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\css\\Privacy.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Feb 2026 10:04:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc="
+        }
+      ]
+    },
+    {
+      "Route": "css/Privacy.css.gz",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\obj\\Debug\\net9.0\\compressed\\xx18bwg9qj-umg7kijnt0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2674"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"118R7F4p2sdftw8dYtyLcv4RsbUK9A1WfByx0/SvzIU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Feb 2026 10:04:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-118R7F4p2sdftw8dYtyLcv4RsbUK9A1WfByx0/SvzIU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Privacy.umg7kijnt0.css",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\obj\\Debug\\net9.0\\compressed\\xx18bwg9qj-umg7kijnt0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000373831776"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2674"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"118R7F4p2sdftw8dYtyLcv4RsbUK9A1WfByx0/SvzIU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Feb 2026 10:04:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "umg7kijnt0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Privacy.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc="
+        }
+      ]
+    },
+    {
+      "Route": "css/Privacy.umg7kijnt0.css",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\wwwroot\\css\\Privacy.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Feb 2026 10:04:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "umg7kijnt0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Privacy.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc="
+        }
+      ]
+    },
+    {
+      "Route": "css/Privacy.umg7kijnt0.css.gz",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\721242\\GitHub\\Task-2-\\CityPointWeb\\CityPointWeb\\obj\\Debug\\net9.0\\compressed\\xx18bwg9qj-umg7kijnt0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2674"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"118R7F4p2sdftw8dYtyLcv4RsbUK9A1WfByx0/SvzIU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Feb 2026 10:04:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "umg7kijnt0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Privacy.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-118R7F4p2sdftw8dYtyLcv4RsbUK9A1WfByx0/SvzIU="
         }
       ]
     },

@@ -61,8 +61,10 @@
 \\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 \\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\lib\jquery-validation\dist\jquery.validate.js
 \\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\css\rooms.css
+\\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\css\Privacy.css
 \\dom.sandwell.ac.uk\Student\HomeEven\721242\GitHub\Task-2-\CityPointWeb\CityPointWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
 wwwroot\css\home.css
+wwwroot\css\Privacy.css
 wwwroot\css\rooms.css
 wwwroot\favicon.ico
 wwwroot\js\home.js

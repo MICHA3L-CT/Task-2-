@@ -1,0 +1,639 @@
+﻿/* =============================================
+   CityPoint - Privacy Policy Page Styles
+   Theme: Blue & White with Rounded Edges & Floating Cards
+   Matches Rooms Page Design
+   ============================================= */
+
+/* Import Color Variables */
+:root {
+    --primary-blue: #1e3a8a;
+    --secondary-blue: #3b82f6;
+    --light-blue: #60a5fa;
+    --lighter-blue: #93c5fd;
+    --lightest-blue: #dbeafe;
+    --dark-blue: #1e40af;
+    --white: #ffffff;
+    --off-white: #f8fafc;
+    --gray-light: #e2e8f0;
+    --gray-medium: #94a3b8;
+    --gray-dark: #475569;
+    --text-dark: #1e293b;
+    --success-green: #10b981;
+    --danger-red: #ef4444;
+    --shadow-sm: 0 2px 8px rgba(30, 58, 138, 0.08);
+    --shadow-md: 0 4px 16px rgba(30, 58, 138, 0.12);
+    --shadow-lg: 0 8px 32px rgba(30, 58, 138, 0.16);
+    --shadow-xl: 0 12px 48px rgba(30, 58, 138, 0.20);
+}
+
+/* =============================================
+   Page Header - Floating Effect
+   ============================================= */
+.page-header-privacy {
+    position: relative;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    padding: 5rem 0 4rem;
+    margin-bottom: 3rem;
+    color: var(--white);
+    border-radius: 0 0 24px 24px;
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+}
+
+.page-header-overlay-privacy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(96, 165, 250, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.3) 0%, transparent 50%);
+    animation: pulsePrivacy 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes pulsePrivacy {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.page-title-privacy {
+    position: relative;
+    z-index: 2;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.page-subtitle-privacy {
+    position: relative;
+    z-index: 2;
+    font-size: 1.3rem;
+    opacity: 0.95;
+    font-weight: 300;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.effective-date-privacy {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =============================================
+   Main Content Area
+   ============================================= */
+.privacy-main-content {
+    padding-bottom: 4rem;
+    background: var(--off-white);
+}
+
+/* =============================================
+   Intro Card
+   ============================================= */
+.privacy-intro-card {
+    background: var(--white);
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray-light);
+    padding: 3rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+    .privacy-intro-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-xl);
+    }
+
+    .privacy-intro-card p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--gray-dark);
+        margin-bottom: 1.5rem;
+    }
+
+        .privacy-intro-card p:last-child {
+            margin-bottom: 0;
+        }
+
+.compliance-badge {
+    background: linear-gradient(135deg, var(--lightest-blue) 0%, var(--white) 100%);
+    padding: 1.5rem;
+    border-radius: 16px;
+    border-left: 4px solid var(--secondary-blue);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+    .compliance-badge i {
+        color: var(--success-green);
+        font-size: 1.5rem;
+    }
+
+/* =============================================
+   Section Cards
+   ============================================= */
+.privacy-section-card {
+    background: var(--white);
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray-light);
+    padding: 3rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+    .privacy-section-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-xl);
+    }
+
+.highlight-card {
+    border-left: 5px solid var(--secondary-blue);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--gray-light);
+}
+
+.section-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--light-blue) 100%);
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 50%;
+    box-shadow: var(--shadow-md);
+    flex-shrink: 0;
+}
+
+.section-header h2 {
+    color: var(--primary-blue);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* =============================================
+   Subsections
+   ============================================= */
+.subsection {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--lightest-blue);
+    border-radius: 16px;
+    border-left: 3px solid var(--light-blue);
+}
+
+    .subsection h3 {
+        color: var(--primary-blue);
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+        .subsection h3 i {
+            color: var(--secondary-blue);
+        }
+
+    .subsection ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .subsection ul li {
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            position: relative;
+            color: var(--gray-dark);
+        }
+
+            .subsection ul li::before {
+                content: "•";
+                color: var(--secondary-blue);
+                font-weight: bold;
+                position: absolute;
+                left: 0;
+                font-size: 1.2rem;
+            }
+
+/* =============================================
+   Lists
+   ============================================= */
+.icon-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .icon-list li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.75rem 0;
+        color: var(--gray-dark);
+        font-size: 1.05rem;
+    }
+
+        .icon-list li i {
+            color: var(--success-green);
+            font-size: 1.2rem;
+        }
+
+.security-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .security-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background: var(--lightest-blue);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+    }
+
+        .security-list li:hover {
+            background: var(--lighter-blue);
+            transform: translateX(5px);
+        }
+
+        .security-list li i {
+            color: var(--secondary-blue);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            margin-top: 0.2rem;
+        }
+
+.security-note {
+    background: var(--lightest-blue);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+    .security-note i {
+        color: var(--secondary-blue);
+        font-size: 1.3rem;
+        flex-shrink: 0;
+        margin-top: 0.2rem;
+    }
+
+.privacy-features {
+    list-style: none;
+    padding: 0;
+}
+
+    .privacy-features li {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--gray-light);
+    }
+
+        .privacy-features li:last-child {
+            border-bottom: none;
+        }
+
+        .privacy-features li i {
+            color: var(--secondary-blue);
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            margin-top: 0.2rem;
+        }
+
+/* =============================================
+   Grids
+   ============================================= */
+.legal-basis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.legal-basis-item {
+    background: var(--lightest-blue);
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+    .legal-basis-item:hover {
+        background: var(--white);
+        border-color: var(--secondary-blue);
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+    }
+
+    .legal-basis-item i {
+        font-size: 3rem;
+        color: var(--secondary-blue);
+        margin-bottom: 1rem;
+    }
+
+    .legal-basis-item h4 {
+        color: var(--primary-blue);
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+
+    .legal-basis-item p {
+        color: var(--gray-dark);
+        font-size: 0.95rem;
+        margin: 0;
+    }
+
+.rights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.right-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--lightest-blue);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+    .right-item:hover {
+        background: var(--lighter-blue);
+        transform: translateX(5px);
+    }
+
+    .right-item i {
+        color: var(--secondary-blue);
+        font-size: 1.5rem;
+    }
+
+    .right-item span {
+        color: var(--gray-dark);
+        font-weight: 500;
+    }
+
+/* =============================================
+   Special Badges
+   ============================================= */
+.no-sharing-badge {
+    background: linear-gradient(135deg, var(--success-green) 0%, #059669 100%);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: var(--shadow-md);
+}
+
+    .no-sharing-badge i {
+        font-size: 2rem;
+    }
+
+.cookie-note {
+    background: var(--lightest-blue);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+    .cookie-note i {
+        color: var(--secondary-blue);
+        font-size: 1.3rem;
+        flex-shrink: 0;
+        margin-top: 0.2rem;
+    }
+
+/* =============================================
+   Contact Card
+   ============================================= */
+.contact-card {
+    background: linear-gradient(135deg, var(--lightest-blue) 0%, var(--white) 100%);
+}
+
+.contact-info {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 16px;
+    margin-top: 1rem;
+    border: 2px solid var(--gray-light);
+}
+
+    .contact-info h4 {
+        color: var(--primary-blue);
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .contact-info p {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+        color: var(--gray-dark);
+        font-size: 1.05rem;
+    }
+
+        .contact-info p:last-child {
+            margin-bottom: 0;
+        }
+
+    .contact-info i {
+        color: var(--secondary-blue);
+        font-size: 1.2rem;
+    }
+
+    .contact-info a {
+        color: var(--secondary-blue);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+        .contact-info a:hover {
+            color: var(--primary-blue);
+            text-decoration: underline;
+        }
+
+.contact-note {
+    background: var(--lightest-blue);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    font-style: italic;
+}
+
+/* =============================================
+   Acknowledgment Card
+   ============================================= */
+.acknowledgment-card {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    color: var(--white);
+    padding: 2.5rem;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: var(--shadow-xl);
+    margin-top: 2rem;
+}
+
+    .acknowledgment-card i {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .acknowledgment-card p {
+        font-size: 1.1rem;
+        margin: 0;
+        line-height: 1.8;
+    }
+
+/* =============================================
+   Animations
+   ============================================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.privacy-section-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.privacy-section-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.privacy-section-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.privacy-section-card:nth-child(4) {
+    animation-delay: 0.25s;
+}
+
+.privacy-section-card:nth-child(5) {
+    animation-delay: 0.3s;
+}
+
+/* =============================================
+   Responsive Design
+   ============================================= */
+@media (max-width: 991px) {
+    .page-title-privacy {
+        font-size: 2.5rem;
+    }
+
+    .page-subtitle-privacy {
+        font-size: 1.1rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header-privacy {
+        padding: 3rem 0 2rem;
+    }
+
+    .page-title-privacy {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .privacy-intro-card,
+    .privacy-section-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .section-header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .legal-basis-grid,
+    .rights-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title-privacy {
+        font-size: 1.75rem;
+    }
+
+    .section-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.3rem;
+    }
+}

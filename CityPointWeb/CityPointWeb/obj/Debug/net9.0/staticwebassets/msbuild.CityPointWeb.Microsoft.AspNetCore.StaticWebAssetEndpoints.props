@@ -24,6 +24,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hs/eXg1n7dZ/bK04KX8f7HpuN6T5IfWNFdOya04nL4k="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"17490"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hs/eXg1n7dZ/bK04KX8f7HpuN6T5IfWNFdOya04nL4k=\u0022"},{"Name":"Last-Modified","Value":"Mon, 09 Feb 2026 16:12:46 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CityPointWeb/css/Privacy.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Privacy.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"14957"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Feb 2026 10:04:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CityPointWeb/css/Privacy.umg7kijnt0.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Privacy.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"umg7kijnt0"},{"Name":"integrity","Value":"sha256-9lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc="},{"Name":"label","Value":"_content/CityPointWeb/css/Privacy.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"14957"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229lv4GsanutkKHy8sLuZzt31F9xi2C29n8vSCKqPHTvc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Feb 2026 10:04:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CityPointWeb/css/rooms.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\rooms.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
